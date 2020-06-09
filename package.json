@@ -1,0 +1,16 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "El primer Proyecto de NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jmartinezac@bitbucket.org/jim_2306/guia-hoteles.git"
+  },
+  "author": "Jorge Martinez Acosta",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/jim_2306/guia-hoteles#readme"
+}
