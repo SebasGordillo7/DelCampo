@@ -4,6 +4,7 @@
   "description": "El primer Proyecto de NodeJs",
   "main": "index.js",
   "scripts": {
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,5 +13,8 @@
   },
   "author": "Jorge Martinez Acosta",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/jim_2306/guia-hoteles#readme"
+  "homepage": "https://bitbucket.org/jim_2306/guia-hoteles#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
