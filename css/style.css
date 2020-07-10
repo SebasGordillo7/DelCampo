@@ -1,13 +1,20 @@
-.container {}
-
-.borde {
-    border-radius: 10px;
-    border-color: black;
-    border-style: solid;
-    padding: 1em;
-    margin: 0.3em;
+* {
+    box-sizing: border-box;
 }
 
-.color {
-    background-color: rgb(177, 225, 65);
+.card-hotel {
+    /* flex: 1 150px; */
+    padding: 10px;
+}
+
+.btn-reserva {
+    width: 100%;
+}
+
+/* .rounded {
+    height: 100px;
+} */
+
+footer {
+    margin-top: 20px;
 }
