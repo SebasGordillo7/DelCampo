@@ -4,7 +4,7 @@
 
 
 .card-hotel {
-    /* flex: 1 150px; */
+    flex: 1 250px;
     padding: 10px;
 }
 
@@ -15,7 +15,9 @@
 /* .rounded {
     height: 100px;
 } */
-
+.card {
+    margin: 5px;
+}
 
 footer {
     margin-top: 20px;
