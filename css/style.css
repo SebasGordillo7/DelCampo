@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 .card-hotel {
     /* flex: 1 150px; */
     padding: 10px;
@@ -14,6 +15,7 @@
 /* .rounded {
     height: 100px;
 } */
+
 
 footer {
     margin-top: 20px;
