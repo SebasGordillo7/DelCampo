@@ -1,0 +1,4 @@
+.pulse:hover {
+    transform: scale3d(1.6, 1.6, 1.6);
+    cursor: pointer;
+}
