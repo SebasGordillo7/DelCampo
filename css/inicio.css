@@ -1,0 +1,12 @@
+@import 'responsive.css';
+@import 'animaciones.css';
+@import 'componentes.css';
+@import 'layout.css';
+
+.cambio-color {
+    color: #076335;
+}
+
+.nav-color {
+    color: #076335;
+}
