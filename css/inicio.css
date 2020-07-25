@@ -3,10 +3,52 @@
 @import 'componentes.css';
 @import 'layout.css';
 
-.cambio-color {
+
+.navbar-verde,
+.navbar-toggler,
+.texto-verde,
+.nav-link {
+    color: #00CB6F;
+}
+
+
+.nav-link:hover {
     color: #076335;
 }
 
-.nav-color {
+.nav-icon {
+    font-size: 2em;
+}
+
+.texto-banner {
+    background-color: rgba(0, 0, 0, 0.250);
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+}
+
+.text-size-banner {
+    font-size: 25px;
+}
+
+.margen {
+    margin-top: 18px;
+}
+
+.decoration-none:hover {
+    text-decoration: none;
+}
+
+.box {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    box-shadow: 5px 10px 15px #076335c7;
+}
+
+.texto-oscuro {
     color: #076335;
 }

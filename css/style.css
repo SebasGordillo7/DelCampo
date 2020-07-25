@@ -7,13 +7,13 @@
 :root {}
 
 .img-logo {
-    height: 80px;
+    height: 100px;
     padding: 0;
     margin: 0;
 }
 
 .navbar-s {
-    height: 80px;
+    height: 130px;
     background-color: #00CB6F;
 }
 
@@ -41,5 +41,10 @@
 
 footer {
     margin-top: 20px;
-    background-color: #00CB6F;
+    background-color: #076335;
+}
+
+.sn-size {
+    font-size: 30px;
+    padding: 10px;
 }
