@@ -1,0 +1,83 @@
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+    /* Responsive imagen banner */
+    .imagen-banner {
+        height: 200px;
+    }
+
+    .mensaje-footer {
+        font-size: 22px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .img-logo {
+        width: 80px;
+    }
+
+    .titulo-brand {
+        font-size: 40px;
+    }
+
+    /* Responsive imagen banner */
+    .imagen-banner {
+        height: 250px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    /* Cambiar fuente de los link en la nav */
+    .nav-link {
+        font-size: 20px;
+    }
+
+    .img-logo {
+        width: 80px;
+    }
+
+    /* Responsive imagen banner */
+    .imagen-banner {
+        height: 300px;
+    }
+
+    /* Titulo de la carta */
+    .titulo-carta {
+        font-size: 26px;
+    }
+
+    /* Subtitulo de cada carta */
+    .subtitulo-carta {
+        font-size: 18px;
+    }
+
+    .banner-mensaje:first-child {
+        font-size: 18px;
+    }
+
+    .banner-mensaje:last-child {
+        font-size: 14px;
+    }
+
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .mensaje-footer {
+        font-size: 26px;
+    }
+
+    .banner-mensaje:first-child {
+        font-size: 20px;
+    }
+
+    .banner-mensaje:last-child {
+        font-size: 16px;
+    }
+
+}
