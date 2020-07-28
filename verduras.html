@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Verduras</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- Fontawesome -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./DelcampoS-favicon.png" type="image/x-icon">
+
+
+</head>
+
+<body class="textos">
+    <!-- Header -->
+    <header>
+    </header>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-s py-0 nav-estilos">
+
+        <div class="d-flex align-items-center ">
+            <a class="navbar-brand m-o p-0" href="index.html">
+                <img class="img-logo d-inline-block " src="./img/DelcampoS.png" alt="logo">
+                <!--  <h1 class="titulo-brand " >Del Campo</h1> -->
+            </a>
+        </div>
+
+        <div class="d-flex order-lg-2 align-items-center">
+            <a class="mx-1" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                aria-controls="collapseExample"> <i class="iconos fas fa-search"></i>
+            </a>
+            <a class="mx-1" href="#"> <i class="iconos fas fa-cart-arrow-down "></i></a>
+
+            <button class="btn iconos-2 btn-outline-success rounded mx-1" data-toggle="modal"
+                data-target="#inicioSesion"><i class="far fa-user fa-lg"></i>
+            </button>
+
+
+            <button class="boton-hamburguesa navbar-toggler mx-1 px-0" type="button" data-toggle="collapse"
+                data-target="#barra-navegacion" aria-controls="barra-navegacion" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class=" iconos fas fa-bars"></i>
+            </button>
+
+        </div>
+        <div class="collapse navbar-collapse justify-content-between align-items-center" id="barra-navegacion">
+            <ul class="navbar-nav">
+                <li class="nav-item active ">
+                    <a class="nav-link titulos-nav" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Productos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="verduras.html">Verduras</a>
+                        <a class="dropdown-item" href="frutas.html">Frutas</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="hierbas.html">Hierbas Aromáticas</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="collapse mb-2 " id="collapseExample">
+            <div class="card p-0 card-body border-0">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2 w-75" type="search" placeholder="¿Que buscas?"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success mx-1 rounded btn-sm my-2 my-sm-0"
+                        type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Main -->
+    <main>
+        <!-- Carrusel -->
+        <div class="container-fluid banner-carrusel mb-3">
+            <div id="carrusel-fotos-banner" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carrusel-fotos-banner" data-slide-to="0" class="active"></li>
+                    <li data-target="#carrusel-fotos-banner" data-slide-to="1"></li>
+                    <li data-target="#carrusel-fotos-banner" data-slide-to="2"></li>
+                </ol>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/verduras-5.jpg" class="imagen-banner d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/verduras-6.jpg" class="imagen-banner d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/verduras-3.jpg" class="imagen-banner d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Mensaje verduras -->
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mt-4 ">
+
+                <div class="banner-mensaje">
+                    <span>Nuestra cosecha de verduras</span>
+                </div>
+
+                <div class="banner-mensaje ">
+                    <span> 6 items</span>
+                </div>
+            </div>
+            <hr class="m-0">
+
+            <!-- Cartas -->
+            <div class="row ">
+                <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
+                    <div class="card scale">
+                        <div class="overflow-h">
+                            <img src="./img/tomate-2.jpg" class="card-img-top" alt="tomate">
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center p-2">
+                            <h4 class="titulo-carta card-title">Tomate</h4>
+                            <h6 class="subtitulo-carta">500gr</h6>
+                            <h5 class="subtitulo-carta">$1.200</h5>
+                            <button type="button" class="btn btn-outline-success rounded w-50">
+                                <i class="fas fa-cart-plus fa-lg"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
+                    <div class="card scale ">
+                        <div class="overflow-h">
+                            <img src="./img/cebolla-1.jpg" class="card-img-top" alt="cebolla">
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center p-2">
+                            <h4 class="titulo-carta card-title">Cebolla</h4>
+                            <h6 class="subtitulo-carta">500gr</h6>
+                            <h5 class="subtitulo-carta">$800</h5>
+                            <button type="button" class="btn btn-outline-success rounded w-50">
+                                <i class="fas fa-cart-plus fa-lg"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
+                    <div class="card scale">
+                        <div class="overflow-h">
+                            <img src="./img/zanahoria-1.jpg" class="card-img-top" alt="zanahoria">
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center p-2">
+                            <h4 class="titulo-carta card-title">Zanahoria</h4>
+                            <h6 class="subtitulo-carta">250gr</h6>
+                            <h6 class="subtitulo-carta">$600</h6>
+                            <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                            <button type="button" class="btn btn-outline-success rounded w-50">
+                                <i class="fas fa-cart-plus fa-lg"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
+                    <div class="card scale">
+                        <div class="overflow-h">
+                            <img src="./img/mazorca.jpg" class="card-img-top" alt="mazorca">
+                        </div>
+                        <div class=" titulo-cartas card-body d-flex flex-column align-items-center p-2">
+                            <h4 class="titulo-carta card-title">Mazorca</h4>
+                            <h6 class="subtitulo-carta">1000gr</h6>
+                            <h6 class="subtitulo-carta">$2.400</h6>
+                            <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                            <button type="button" class="btn btn-outline-success rounded w-50">
+                                <i class="fas fa-cart-plus fa-lg"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
+                    <div class="card scale">
+                        <div class="overflow-h">
+                            <img src="./img/pimenton.jpg" class="card-img-top" alt="pimenton">
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center p-2">
+                            <h4 class="titulo-carta card-title">Pimenton</h4>
+                            <h6 class="subtitulo-carta">250gr</h6>
+                            <h6 class="subtitulo-carta">$600</h6>
+                            <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                            <button type="button" class="btn btn-outline-success rounded w-50">
+                                <i class="fas fa-cart-plus fa-lg"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
+                    <div class="card scale">
+                        <div class="overflow-h">
+                            <img src="./img/papa.jpg" class="card-img-top" alt="pimenton">
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center p-2">
+                            <h4 class="titulo-carta card-title">Papa</h4>
+                            <h6 class="subtitulo-carta">250gr</h6>
+                            <h6 class="subtitulo-carta">$600</h6>
+                            <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                            <button type="button" class="btn btn-outline-success rounded w-50">
+                                <i class="fas fa-cart-plus fa-lg"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Footer Elements -->
+        <div class="container ">
+
+            <!-- Grid row-->
+            <div class="d-flex justify-content-center align-items-center">
+
+                <!-- Grid column -->
+                <div class="my-4">
+                    <!-- Facebook -->
+                    <a class="col text-decoration-none iconos-footer" href="#">
+                        <i class="fab fa-facebook-f fa-2x"></i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="col text-decoration-none iconos-footer" href="#">
+                        <i class="fab fa-twitter fa-2x"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="col text-decoration-none iconos-footer" href="#">
+                        <i class="fab fa-instagram fa-2x"> </i>
+                    </a>
+                    <!-- Google +-->
+                    <a class="col text-decoration-none iconos-footer" href="#">
+                        <i class="fab fa-google-plus-g fa-2x "> </i>
+                    </a>
+                </div>
+
+            </div>
+            <div class="text-center ">
+                <h5 class="mensaje-footer">¡Lo mejor del campo a tu disposición!</h5>
+            </div>
+
+
+            <!-- Copyright -->
+            <hr class="m-0">
+            <div class="footer-copyright text-center py-2">©2020 Copyright:
+                <a class="footer-copyright" href="https://bootstrap.com/">Del Campo®</a>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Modal Inicio Sesión-->
+    <div class="modal fade" id="inicioSesion" tabindex="-1" role="dialog" aria-labelledby="ModalLabelInicio"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabelInicio">
+                        Inicio de Sesión
+                    </h5>
+                    <!-- Botón de cierre -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- Modal Content -->
+                    <form>
+                        <div class="form-group">
+                            <!-- <label for="exampleInputEmail1">Usuario</label> -->
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Usuario">
+                            <small id="emailHelp" class="form-text text-muted">
+                                Nunca compartiremos su nombre de usuario con nadie más.</small>
+                        </div>
+                        <div class="form-group">
+                            <!--  <label for="exampleInputPassword1">Contraseña</label> -->
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Contraseña">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+
+                    <a class="dropdown-item" href="#">¿Olvido su clave?</a>
+                    <button type="submit" class="btn btn-success">Iniciar Sesión</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Registro-->
+    <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="ModalLabelRegistro"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabelRegistro">
+                        Registro
+                    </h5>
+                    <!-- Botón de cierre -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- Modal Content -->
+                    <form class="needs-validation" novalidate>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom01">Nombres</label>
+                                <input type="text" class="form-control" id="validationCustom01" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom02">Apellidos</label>
+                                <input type="text" class="form-control" id="validationCustom02" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustomUsername">Nombre de Usuario</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="validationCustomUsername"
+                                        aria-describedby="inputGroupPrepend" required>
+                                    <div class="invalid-feedback">
+                                        Por favor rellene el campo.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">Ciudad</label>
+                                <input type="text" class="form-control" id="validationCustom03" required>
+                                <div class="invalid-feedback">
+                                    Por favor rellene el campo.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom04">Teléfono</label>
+                                <input type="text" class="form-control" id="validationCustom04" required>
+                                <div class="invalid-feedback">
+                                    Por favor rellene el campo.
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Acepto los terminos y condiciones.
+                                </label>
+                            </div>
+                        </div>
+                        <button class="btn btn-success" type="submit">Guardar</button>
+                    </form>
+
+                    <script>
+                        // Example starter JavaScript for disabling form submissions if there are invalid fields
+                        (function () {
+                            'use strict';
+                            window.addEventListener('load', function () {
+                                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                var forms = document.getElementsByClassName('needs-validation');
+                                // Loop over them and prevent submission
+                                var validation = Array.prototype.filter.call(forms, function (form) {
+                                    form.addEventListener('submit', function (event) {
+                                        if (form.checkValidity() === false) {
+                                            event.preventDefault();
+                                            event.stopPropagation();
+                                        }
+                                        form.classList.add('was-validated');
+                                    }, false);
+                                });
+                            }, false);
+                        })();
+                    </script>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Script de bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
