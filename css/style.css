@@ -1,5 +1,6 @@
-
-@import 'responsive.css'; 
+/* Cambios Sebastian */
+/* @import 'responsive.css'; */
+@import 'responsive.css';
 @import 'animaciones.css';
 @import 'componentes.css';
 @import 'layout.css';
@@ -123,4 +124,30 @@
 footer {
     margin-top: 20px;
     background-color: var(--tercer-color);
+}
+
+.submenu {
+    position: relative;
+}
+
+ul {
+    list-style: none;
+    padding: 15px 0px 0px 0px;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+
+    top: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
 }
