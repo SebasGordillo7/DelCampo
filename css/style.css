@@ -1,45 +1,107 @@
-@import 'responsive.css';
+
+@import 'responsive.css'; 
 @import 'animaciones.css';
 @import 'componentes.css';
 @import 'layout.css';
 
+
 /* Variables generales */
-:root {}
+:root {
+    /* --primer-color: #00CB6F; */
+    --primer-color: #28a745;
+    --tercer-color: #076335;
+
+    --danger-color: #DC3545;
+    --warning-color: #FFC107;
+    --info-color: #17A2B8;
+}
+
+/* Fuente que esta en figma */
+@font-face {
+    font-family: 'Inter-titulos';
+    src: url(../fuentes/static/Inter-Medium-slnt=0.ttf);
+}
+
+@font-face {
+    font-family: 'Inter-regular';
+    src: url(../fuentes/static/Inter-Regular-slnt=0.ttf);
+}
+
+@font-face {
+    font-family: 'Kalam';
+    src: url(../fuentes/Kalam-Regular.ttf);
+}
+
+/* Header */
+.titulo-brand {
+    font-family: Kalam;
+    display: inline;
+    color: black;
+    font-size: 20px;
+    margin: 0;
+}
 
 .img-logo {
-    height: 80px;
+    width: 60px;
+    height: auto;
     padding: 0;
     margin: 0;
 }
 
+/* Navbar principal */
 .navbar-s {
-    height: 80px;
-    background-color: #00CB6F;
+    background-color: white;
+    box-shadow: 0 0 15px black;
 }
 
-.img-gra {
-    background-image: linear-gradient(to bottom,
-            rgba(0, 32, 61, 0) 80%,
-            #00CB6F 100%),
-        url("/img/frutas.jpg");
-    width: 100%;
-    height: 300px;
-    background-size: cover;
-    margin: 10px;
-    border-radius: 10px;
+/* Cambiar color a los link de la navbar */
+.navbar-s .nav-link,
+.navbar-s .dropdown-item {
+    color: var(--primer-color);
+}
+
+/* Active de la navbar */
+.navbar-s .active .nav-link,
+.navbar-s .active .dropdown-menu {
+    /* color: var(--tercer-color); */
+    font-weight: bold;
+}
+
+/* Hover de los link en navbar */
+.navbar-s .nav-link:hover {
+    /* color: var(--tercer-color); */
+}
+
+/* Hover del menu productos */
+.navbar-s .dropdown-item:hover {
+    background-color: var(--primer-color);
+    color: white;
+}
+
+/* Menu del dropdown */
+.navbar-s .dropdown-menu {
+    position: absolute;
 }
 
 
-.card-producto {
-    flex: 1 100px;
+/* Quitar borde naranja al boton */
+.navbar-s .boton-hamburguesa:focus {
+    outline: none;
 }
 
 
-.btn-reserva {
-    width: 100%;
+/* Main */
+/* Fuente para todo el texto */
+.textos {
+    font-family: Inter-regular;
 }
 
+/* Footer */
 footer {
     margin-top: 20px;
-    background-color: #00CB6F;
+    background-color: var(--tercer-color);
 }
+
+
+
+

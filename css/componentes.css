@@ -1,0 +1,70 @@
+/* Header y nav */
+/* Iconos del header */
+.iconos {
+    color: var(--primer-color);
+    font-size: 150%;
+}
+
+/* Icono de formulario */
+.iconos-2 {
+    color: var(--primer-color);
+    font-size: 60%;
+}
+
+/* Carrusel de fotos en el banner */
+.banner-carrusel {
+    background-size: cover;
+    padding: 0;
+}
+
+/* Imagen dentro del banner  */
+.imagen-banner {
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Mensaje banner */
+.banner-mensaje:first-child {
+    font-size: 16px;
+}
+
+.banner-mensaje:last-child {
+    font-size: 12px;
+}
+
+/* Main */
+
+/* Titulo de la carta */
+.titulo-carta {
+    font-size: 22px;
+}
+
+/* Subtitulo de cada carta */
+.subtitulo-carta {
+    font-size: 16px;
+}
+
+
+/* Footer */
+
+/* Iconos de redes sociales en el footer*/
+.iconos-footer {
+    color: black;
+}
+
+/* Hover en los iconos del footer */
+.iconos-footer:hover {
+    color: rgb(235, 232, 232);
+    text-decoration: none;
+    
+}
+
+.mensaje-footer {
+    color: rgb(235, 232, 232);
+    font-family: Kalam;
+    font-size: 18px;
+}
+
+.footer-copyright {
+    color: rgb(235, 232, 232);
+}
