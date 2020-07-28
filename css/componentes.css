@@ -56,7 +56,7 @@
 .iconos-footer:hover {
     color: rgb(235, 232, 232);
     text-decoration: none;
-    
+
 }
 
 .mensaje-footer {
@@ -67,4 +67,27 @@
 
 .footer-copyright {
     color: rgb(235, 232, 232);
+}
+
+.carrusel-descripcion {}
+
+.imagen-descripcion {
+    height: 130px;
+    /* Para que no se dañe o espiche la imagen */
+    object-fit: cover;
+}
+
+.acordeon-titulos {
+
+    color: black;
+    font-weight: 600;
+}
+
+.acordeon-titulos:focus {
+    text-decoration: none;
+}
+
+.acordeon-titulos:hover,
+.acordeon-titulos:active {
+    color: var(--primer-color);
 }
