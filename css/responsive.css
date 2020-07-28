@@ -9,6 +9,10 @@
     .mensaje-footer {
         font-size: 22px;
     }
+
+    .tamaño-boton{
+        width: 50%;
+    }
 }
 
 /* // Medium devices (tablets, 768px and up) */

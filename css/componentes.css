@@ -77,8 +77,10 @@
     object-fit: cover;
 }
 
+.tamaño-boton{
+    width: 100%;
+}
 .acordeon-titulos {
-
     color: black;
     font-weight: 600;
 }
