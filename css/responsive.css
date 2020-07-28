@@ -26,6 +26,10 @@
     .imagen-banner {
         height: 250px;
     }
+
+    .text-size-banner {
+        font-size: 90px;
+    }
 }
 
 /* // Large devices (desktops, 992px and up) */
