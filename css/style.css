@@ -1,5 +1,5 @@
-/* Cambios Sebastian */
-/* @import 'responsive.css'; */
+
+@import 'responsive.css'; 
 @import 'animaciones.css';
 @import 'componentes.css';
 @import 'layout.css';
@@ -70,6 +70,29 @@
 /* Hover de los link en navbar */
 .navbar-s .nav-link:hover {
     /* color: var(--tercer-color); */
+}
+
+/* Hover del menu productos */
+.navbar-s .dropdown-item:hover {
+    background-color: var(--primer-color);
+    color: white;
+}
+
+/* Menu del dropdown */
+.navbar-s .dropdown-menu {
+    position: absolute;
+}
+
+/* Active de la navbar */
+.navbar-s .active .nav-link,
+.navbar-s .active .dropdown-menu {
+    /* color: var(--tercer-color); */
+    font-weight: bold;
+}
+
+/* Quitar borde naranja al boton */
+.navbar-s .boton-hamburguesa:focus {
+    outline: none;
 }
 
 /* Hover del menu productos */
