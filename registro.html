@@ -5,11 +5,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Contacto</title>
+    <title>Registro</title>
 
     <!--CSS y Bootstrap-->
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="/css/registro.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -70,102 +70,151 @@
 
             <form>
                 <div class="general d-flex flex-column"><img class="img-registro" src="./img/DelcampoS.png" alt="logo">
+
+
                     <div class="registro col-sm-12">
-                        <h1>Escríbenos</h1>
-
-                        <h4>Permítanos conocer todas sus opiniónes, sugerencias o reconocimientos.</h4>
+                        <h1>Te damos la bienvenida a Del Campo</h1>
+                        <h4>¡Aprovecha nuestras mejores ofertas!</h4>
 
                     </div>
 
-                    <div class="form-row col-sm-6">
+                    <!--
+                    <div class="input-fomulario">-->
+
+
+                    <div class="row col-sm-6">
                         <div class="campos col-sm-12">
-
-                            <input type="text" class="campos-texto" id="nombre" placeholder="Nombre Completo">
+                            <select class="campos-texto" id="identificacion" name="identificacion"
+                                title="Seleccione su identificación" autofocus required>
+                                <option hidden selected>Tipo de identificación</option>
+                                <option value="nit">NIT</option>
+                                <option value="cedula">Cédula de Ciudadanía</option>
+                                <option value="extranjeria">Cédula de Extranjería</option>
+                                <option value="pasaporte">Pasaporte</option>
+                            </select>
                         </div>
+                    </div>
 
+
+                    <div class="row col-sm-6">
+                        <div class="campos col-sm-12">
+                            <input type="text" class="campos-texto" id="nombre" title="Escriba su nombre completo"
+                                placeholder="Nombre Completo" maxlength="30" pattern="[A-Za-z]{1,15}" required>
+                        </div>
+                    </div>
+
+
+                    <div class="row col-sm-6 alinear">
+                        <div class="campos col-sm-12 buttom">
+                            <label><input type="radio" name="radio" class="buttom" value="empresa"><span> Empresa</span>
+                            </label>
+                            <label> <input type="radio" name="radio" class="buttom" value="persona"><span>
+                                    Persona</span></label>
+                        </div>
                     </div>
 
 
 
 
-
-                    <div class="form-row col-sm-6">
-                        <div class="form-group col-sm-8">
-
-                            <input type="text" class="campos-texto" id="email" placeholder="Email">
-                        </div>
-                        <div class="form-group col-sm-4">
-                            <input type="email" class="campos-texto" rows="10" id="telefono" placeholder="Telefono">
-                        </div>
-                    </div>
 
 
                     <div class="row col-sm-6">
                         <div class="campos col-sm-12">
                             <select class="campos-texto" id="estado" name="estado" title="Seleccione su Estado"
                                 autofocus required>
-                                <option hidden selected>Tipo de Cliente</option>
+                                <option hidden selected>Selecciona una Opción</option>
                                 <option value="empresa">Empresa</option>
                                 <option value="persona">Persona Natural </option>
                             </select>
                         </div>
                     </div>
 
+
+
+
+
                     <div class="row col-sm-6">
                         <div class="campos col-sm-12">
-                            <select class="campos-texto" id="opinion" name="opinion" title="Tipo de Solicitud" autofocus
-                                required>
-                                <option hidden selected>Tipo de Solicitud</option>
-                                <option value="queja">Queja</option>
-                                <option value="reclamo">Reclamo </option>
-                                <option value="reconocimiento">Reconocimiento </option>
-                                <option value="solicitud">Solicitud</option>
-                                <option value="sugerencia">Sugerencia </option>
-                                <option value="cotización">Cotización </option>
+                            <input type="text" class="campos-texto" id="empresa" title="Escriba el nombre de su empresa"
+                                placeholder="Nombre de la Empresa" minlength="4" maxlength="30" required>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row col-sm-6">
+                        <div class="campos col-sm-12">
+                            <select class="campos-texto" name="Cargo" title="Seleccione su Cargo" autofocus required>
+                                <!--disabled selected-->
+                                <option hidden selected>Selecciona el Cargo</option>
+                                <option value="nit">Gerente Comercial</option>
+                                <option value="cedula">Gerente de Ventas </option>
+                                <option value="extranjeria">Supervisor</option>
+                                <option value="pasaporte">Promotor</option>
+                                <option value="pasaporte">Administrador</option>
+                                <option value="pasaporte">Asistente de Ventas</option>
+                                <option value="pasaporte">Analista de Ventas</option>
+                                <option value="pasaporte">Ejecutivo de Ventas</option>
+                                <option value="pasaporte">Gerente de Marketing</option>
+                                <option value="pasaporte">Otro</option>
                             </select>
                         </div>
                     </div>
 
 
 
-                    <div class="form-row col-sm-6">
-                        <div class=" form-group col-sm-12">
-                            <textarea class="campos-texto" name="" id="mensaje" rows="6"
-                                placeholder="Comentarios"></textarea>
+
+
+
+                    <div class="row col-sm-6">
+                        <div class="campos col-sm-12">
+                            <input type="email" class="campos-texto" title="Escriba su correo electronico" id="email"
+                                placeholder="anaphie@example.com" maxlength="30" required>
+                        </div>
+                    </div>
+
+                    <div class="row col-sm-6">
+                        <div class="campos col-sm-12">
+                            <input type="tel" class="campos-texto" id="telefono" title="Escriba su numero de telefono"
+                                placeholder="Teléfono" minlength="7" maxlength="10" pattern="[0-9]{7,10}" required>
                         </div>
                     </div>
 
 
+
+                    <div class="row col-sm-6">
+                        <div class="campos col-sm-12">
+                            <input type="password" class="campos-texto" id="contraseña"
+                                title="Escriba su contraseña con un minino de 5 y maximo de 10 caracteres"
+                                placeholder="Contraseña" minlength="5" maxlength="10" pattern="[A-Za-z0-9!?-]{5,10}"
+                                required>
+                        </div>
+                    </div>
+
+                    <!-- </div>-->
+
                     <div class="boton">
-                        <input class="bton" type="submit" value="Enviar" />
+                        <input class="bton" type="submit" value="Registrarte" />
 
 
                     </div>
-
                 </div>
             </form>
-
-
-
-
-
-
-
-
-
-
         </div>
     </main>
     <!-- Footer -->
-    <footer>
+    <!-- aqui le hice modificacion personalizada -->
+    <footer class="footer-modificado">
         <!-- Footer Elements -->
         <div class="container">
 
             <!-- Grid row-->
-            <div class="d-flex flex-column align-items-center">
+            <div class="d-flex flex-column align-items-center redes-sociales">
 
                 <!-- Grid column -->
-                <div class="col--12 py-5">
+                <!-- aqui quite la clase py-5 y agrege una propia llamada  iconos-redes -->
+                <div class="col--12  iconos-redes">
                     <!-- Facebook -->
                     <a class="col" href="#" target="_blank">
                         <i class="fab fa-facebook-f fa-2x"></i>
@@ -192,15 +241,13 @@
                     </a>
                 </div>
                 <!-- Grid column -->
-
+                <!-- Copyright aqui modifique -->
+                <div class="footer-copyright text-center py-3">Copyright © 2020 Del Campo </div>
+                <!-- Copyright -->
             </div>
             <!-- Grid row-->
 
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3"> © 2020 Copyright:
-                <a href="https://bootstrap.com/" style="color:white">Del Campo®</a>
-            </div>
-            <!-- Copyright -->
+
         </div>
     </footer>
     <!-- Footer -->
