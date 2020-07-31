@@ -1,5 +1,6 @@
 h3 {
     color: #ffffff;
+    text-align: center;
 }
 
 h4 {
@@ -8,18 +9,19 @@ h4 {
 
 
 .campos-texto {
-    border-radius: 5px;
+
     color: #076335;
     background-color: #ebf9f3;
     background-clip: padding-box;
     border: 1px solid #076335;
-    border-radius: 30px;
-    padding: 10px 30px;
-    margin-bottom: 15px;
-    font-size: 20px;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
     width: 100%;
     outline: none;
+
 }
+
 
 
 .campos-texto:focus:invalid {
@@ -27,7 +29,6 @@ h4 {
     box-shadow: 0 0 5px #d45252;
     border-color: #b03535
 }
-
 
 
 .campos-texto:hover {
@@ -39,34 +40,42 @@ h4 {
     background: #fff;
     box-shadow: 0 0 5px #126a77;
     border-color: #17A2B8;
-    font-size: 26px;
+    font-size: 15px;
 }
 
 
 
-.boton {
+.buttom {
+
+    font-size: 22px;
+    color: #076335;
+    margin: 0 3px 0 0;
+}
+
+
+.boton2 {
     align-items: center;
-    margin-top: 30px;
+    margin-top: 10px;
 
 }
 
-.bton {
+.bton2 {
     background-color: #076335;
     border-radius: 10px;
     color: white;
     font-size: 20px;
-    padding: 10px;
+    padding: 5px;
     margin: 5px;
     border: 0;
 }
 
 
-.bton:hover {
-    background-color: #00CB6F;
+.bton2:hover {
+    background-color: #000000;
     border-radius: 10px;
     color: white;
     font-size: 20px;
-    padding: 10px;
+    padding: 5px;
     margin: 5px;
     border: 0;
 }
@@ -88,8 +97,9 @@ form {
 }
 
 .registro {
-    margin-bottom: 0px;
-    background-color: #076335;
+    margin-bottom: 30px;
+
+
 }
 
 
@@ -102,25 +112,28 @@ form {
 
 }
 
-.general {
+.general2 {
     background-color: rgb(243, 243, 243);
     border-radius: 10px;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 70px;
+    padding-bottom: 80px;
+    align-items: center;
+    justify-content: center;
 }
 
 
 
 .contenedor {
-    background-color: rgb(255, 255, 255);
+    background-color: #00CB6F;
     border-radius: 10px;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 40px;
     align-items: center;
     justify-content: center;
-    width: 550px;
+    width: 100%;
+
 }
 
 .nombre .nombre-color {
@@ -129,26 +142,10 @@ form {
 }
 
 
-.general {
-    justify-content: center;
-    align-items: center;
-}
 
 
 
-
-.buttom {
-
-    font-size: 22px;
-    color: #076335;
-    margin: 0 3px 0 0;
-}
-
-.campos-texto .icon {
-    position: absolute;
-    top: 50%;
-    margin-left: 17px;
-    margin-top: 17px;
-    z-index: 1;
-    color: #007df1;
+.espacio {
+    padding-top: 20px;
+    padding-bottom: 5px;
 }
