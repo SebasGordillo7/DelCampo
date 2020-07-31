@@ -2,23 +2,23 @@ h1 {
     color: #076335;
 }
 
-h4 {
+h5 {
     color: #696969;
 }
 
 
 .campos-texto {
-    border-radius: 5px;
     color: #076335;
     background-color: #ebf9f3;
     background-clip: padding-box;
     border: 1px solid #076335;
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 10px 30px;
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 12px;
     width: 100%;
     outline: none;
+    height: 37px;
 }
 
 
@@ -39,10 +39,15 @@ h4 {
     background: #fff;
     box-shadow: 0 0 5px #126a77;
     border-color: #17A2B8;
-    font-size: 26px;
+    font-size: 12px;
 }
 
+.buttom {
 
+    font-size: 22px;
+    color: #076335;
+    margin: 0 3px 0 0;
+}
 
 .boton {
     align-items: center;
@@ -54,7 +59,7 @@ h4 {
     background-color: #00CB6F;
     border-radius: 10px;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px;
     margin: 5px;
     border: 0;
@@ -65,7 +70,7 @@ h4 {
     background-color: #076335;
     border-radius: 10px;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px;
     margin: 5px;
     border: 0;
@@ -88,7 +93,7 @@ form {
 }
 
 .registro {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 
@@ -107,26 +112,12 @@ form {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
 
 .nombre .nombre-color {
     background-color: cornsilk;
     border-radius: 15px;
-}
-
-
-
-
-
-.general {
-    align-items: center;
-    justify-content: center;
-}
-
-.buttom {
-
-    font-size: 22px;
-    color: #076335;
-    margin: 0 3px 0 0;
 }
