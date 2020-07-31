@@ -11,3 +11,8 @@
 .overflow-h {
     overflow: hidden;
 }
+
+.carrito{
+    position: relative;
+    z-index: 10;
+}

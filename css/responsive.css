@@ -10,9 +10,12 @@
         font-size: 22px;
     }
 
-    .tamaño-boton{
-        width: 50%;
+    .imagen-descripcion {
+        height: 250px;
     }
+
+
+
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -30,6 +33,8 @@
     .imagen-banner {
         height: 250px;
     }
+
+
 }
 
 /* // Large devices (desktops, 992px and up) */
@@ -59,12 +64,27 @@
         font-size: 18px;
     }
 
+
+    /* Titulo de la descripcion del producto */
+    .titulo-descripcion {
+        font-size: 48px;
+    }
+
+    /* Subtitulo de la descripcion del producto */
+    .subtitulo-descripcion {
+        font-size: 20px;
+    }
+
     .banner-mensaje:first-child {
         font-size: 18px;
     }
 
     .banner-mensaje:last-child {
         font-size: 14px;
+    }
+
+    .imagen-descripcion {
+        height: 300px;
     }
 
 
