@@ -1,0 +1,132 @@
+h1 {
+    color: #076335;
+}
+
+h4 {
+    color: #696969;
+}
+
+
+.campos-texto {
+    border-radius: 5px;
+    color: #076335;
+    background-color: #ebf9f3;
+    background-clip: padding-box;
+    border: 1px solid #076335;
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    width: 100%;
+    outline: none;
+}
+
+
+.campos-texto:focus:invalid {
+    background: #fff;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+
+
+
+.campos-texto:hover {
+    cursor: pointer;
+}
+
+
+.campos-texto:focus:valid {
+    background: #fff;
+    box-shadow: 0 0 5px #126a77;
+    border-color: #17A2B8;
+    font-size: 26px;
+}
+
+
+
+.boton {
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.bton {
+    background-color: #00CB6F;
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    margin: 5px;
+    border: 0;
+}
+
+
+.bton:hover {
+    background-color: #076335;
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    margin: 5px;
+    border: 0;
+}
+
+
+
+/*estilo a la letra del Placeholder*/
+:-moz-placeholder {
+    color: rgb(30, 151, 115);
+}
+
+::-webkit-input-placeholder {
+    color: rgb(30, 151, 115);
+}
+
+form {
+    display: block;
+    margin-top: 100px;
+}
+
+.registro {
+    margin-bottom: 50px;
+}
+
+
+
+
+.general img {
+    align-items: center;
+    width: 15%;
+
+
+}
+
+.general {
+    background-color: rgb(243, 243, 243);
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+
+.nombre .nombre-color {
+    background-color: cornsilk;
+    border-radius: 15px;
+}
+
+
+
+
+
+.general {
+    align-items: center;
+    justify-content: center;
+}
+
+.buttom {
+
+    font-size: 22px;
+    color: #076335;
+    margin: 0 3px 0 0;
+}

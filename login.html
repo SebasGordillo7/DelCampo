@@ -5,20 +5,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Contacto</title>
+    <title>Login</title>
 
     <!--CSS y Bootstrap-->
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="/css/login.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!--Fontawesome-->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./DelcampoS-favicon.png" type="image/x-icon">
 
 
 </head>
@@ -37,7 +34,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="verduras.html">Verduras <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">Verduras <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="frutas.html">Frutas</a>
@@ -62,7 +59,7 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item active" aria-current="page"> <a href="verduras.html">Verduras</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"> <a href="index.html">Verduras</a></li>
                     <li class="breadcrumb-item active" aria-current="page"> <a href="frutas.html">Frutas</a></li>
                     <li class="breadcrumb-item active" aria-current="page"> <a href="hierbas.html">Hierbas
                             Aromáticas</a>
@@ -72,97 +69,66 @@
             </nav>
 
             <form>
-                <div class="general d-flex flex-column"><img class="img-registro" src="./img/DelcampoS.png" alt="logo">
-                    <div class="registro col-sm-12">
-                        <h1>Escríbenos</h1>
+                <div class="general  d-flex flex-column">
 
-                        <h4>Permítanos conocer todas sus opiniónes, sugerencias o reconocimientos.</h4>
 
-                    </div>
+                    <div class="contenedor d-flex flex-column">
 
-                    <div class="form-row col-sm-6">
-                        <div class="campos col-sm-12">
 
-                            <input type="text" class="campos-texto" id="nombre" placeholder="Nombre Completo">
+                        <div class="registro col-sm-12">
+                            <h3>Iniciar sesión</h3>
                         </div>
 
-                    </div>
-                    <div class="form-row col-sm-6">
-                        <div class="form-group col-sm-8">
+                        <!--
+                    <div class="input-fomulario">-->
 
-                            <input type="text" class="campos-texto" id="email" placeholder="Email">
+
+
+
+                        <div class="row col-sm-6">
+                            <div class="campos col-sm-12">
+                                <span class="icon"><i class="fas fa-user-circle"></i></span>
+                                <input type="text" class="campos-texto" id="usuario" title="Escriba su usuario"
+                                    placeholder="Usuario" maxlength="30" pattern="[A-Za-z]{1,15}" required>
+
+
+
+                            </div>
                         </div>
-                        <div class="form-group col-sm-4">
-                            <input type="email" class="campos-texto" rows="10" id="telefono" placeholder="Telefono">
+
+
+
+                        <div class="row col-sm-6">
+                            <div class="campos col-sm-12">
+                                <input type="password" class="campos-texto" id="contraseña"
+                                    title="Escriba su contraseña" placeholder="Contraseña" minlength="5" maxlength="10"
+                                    pattern="[A-Za-z0-9!?-]{5,10}" required>
+                            </div>
                         </div>
-                    </div>
 
+                        <!-- </div>-->
 
-                    <div class="row col-sm-6">
-                        <div class="campos col-sm-12">
-                            <select class="campos-texto" id="estado" name="estado" title="Seleccione su Estado"
-                                autofocus required>
-                                <option hidden selected value="">Tipo de Cliente</option>
-                                <option value="empresa">Empresa</option>
-                                <option value="persona">Persona Natural </option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="row col-sm-6">
-                        <div class="campos col-sm-12">
-                            <select class="campos-texto" id="opinion" name="opinion" title="Tipo de Solicitud" required>
-                                <option hidden selected value="">Tipo de Solicitud</option>
-                                <option value="queja">Queja</option>
-                                <option value="reclamo">Reclamo </option>
-                                <option value="reconocimiento">Reconocimiento </option>
-                                <option value="solicitud">Solicitud</option>
-                                <option value="sugerencia">Sugerencia </option>
-                                <option value="cotización">Cotización </option>
-                            </select>
+                        <div class="boton">
+                            <input class="bton" type="submit" value="Ingresar" />
+                            <a href="registro.html"><input class="bton" value="Registrarte" /></a>
                         </div>
                     </div>
-
-
-
-                    <div class="form-row col-sm-6">
-                        <div class=" form-group col-sm-12">
-                            <textarea class="campos-texto" name="" id="mensaje" rows="6"
-                                placeholder="Comentarios"></textarea>
-                        </div>
-                    </div>
-
-
-                    <div class="boton">
-                        <input class="bton" type="submit" value="Enviar" />
-
-
-                    </div>
-
                 </div>
             </form>
-
-
-
-
-
-
-
-
-
-
         </div>
     </main>
     <!-- Footer -->
-    <footer>
+    <!-- aqui le hice modificacion personalizada -->
+    <footer class="footer-modificado">
         <!-- Footer Elements -->
         <div class="container">
 
             <!-- Grid row-->
-            <div class="d-flex flex-column align-items-center">
+            <div class="d-flex flex-column align-items-center redes-sociales">
 
                 <!-- Grid column -->
-                <div class="col--12 py-5">
+                <!-- aqui quite la clase py-5 y agrege una propia llamada  iconos-redes -->
+                <div class="col--12  iconos-redes">
                     <!-- Facebook -->
                     <a class="col" href="#" target="_blank">
                         <i class="fab fa-facebook-f fa-2x"></i>
@@ -189,15 +155,13 @@
                     </a>
                 </div>
                 <!-- Grid column -->
-
+                <!-- Copyright aqui modifique -->
+                <div class="footer-copyright text-center py-3">Copyright © 2020 Del Campo </div>
+                <!-- Copyright -->
             </div>
             <!-- Grid row-->
 
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3"> © 2020 Copyright:
-                <a href="https://bootstrap.com/" style="color:white">Del Campo®</a>
-            </div>
-            <!-- Copyright -->
+
         </div>
     </footer>
     <!-- Footer -->

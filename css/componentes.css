@@ -86,7 +86,6 @@
     color: rgb(235, 232, 232);
 }
 
-.carrusel-descripcion {}
 
 .imagen-descripcion {
     height: 200px;
@@ -117,4 +116,9 @@
 .acordeon-titulos:hover,
 .acordeon-titulos:active {
     color: var(--primer-color);
+}
+
+.up{
+    position: relative;
+    z-index: 100;
 }
