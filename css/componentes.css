@@ -61,6 +61,12 @@
     font-size: 23px;
 }
 
+/*  */
+.agregar-carrito {
+    position: relative;
+    z-index: 100;
+}
+
 
 /* Footer */
 
@@ -116,9 +122,4 @@
 .acordeon-titulos:hover,
 .acordeon-titulos:active {
     color: var(--primer-color);
-}
-
-.up{
-    position: relative;
-    z-index: 100;
 }

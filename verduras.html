@@ -167,7 +167,7 @@
                             <h4 class="titulo-carta card-title">Tomate</h4>
                             <h6 class="subtitulo-carta">500gr</h6>
                             <h5 class="subtitulo-carta">$1.200</h5>
-                            <button type="button" class="btn btn-outline-success rounded w-50 agregar-carrito up"
+                            <button type="button" class="btn btn-outline-success rounded w-50 agregar-carrito"
                                 data-id="1" onclick="cargarEventsListeners()">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
 
@@ -190,6 +190,9 @@
                             <button type="button" class="btn btn-outline-success rounded w-50 agregar-carrito"
                                 data-id="2" onclick="cargarEventsListeners()">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
+
+                            <!-- Etiqueta carta link -->
+                            <a href="descripcion.html" class="stretched-link card-link"></a>
                         </div>
                     </div>
                 </div>
@@ -206,6 +209,9 @@
                             <button type="button" class="btn btn-outline-success rounded w-50  agregar-carrito"
                                 data-id="3" onclick="cargarEventsListeners()">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
+
+                            <!-- Etiqueta carta link -->
+                            <a href="descripcion.html" class="stretched-link card-link"></a>
                         </div>
                     </div>
                 </div>
@@ -222,6 +228,10 @@
                             <button type="button" class="btn btn-outline-success rounded w-50  agregar-carrito"
                                 data-id="4" onclick="cargarEventsListeners()">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
+
+                            <!-- Etiqueta carta link -->
+                            <a href="descripcion.html" class="stretched-link card-link"></a>
+
                         </div>
                     </div>
                 </div>
@@ -235,9 +245,13 @@
                             <h6 class="subtitulo-carta">250gr</h6>
                             <h5 class="subtitulo-carta">$600</h5>
                             <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                            <button type="button" class="btn btn-outline-success rounded w-50  agregar-carrito"
-                                data-id="5" onclick="cargarEventsListeners()">
+                            <button type="button"
+                                class="btn btn-outline-success rounded w-50 agregar-carrito boton-carrito" data-id="5"
+                                onclick="cargarEventsListeners()">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
+
+                            <!-- Etiqueta carta link -->
+                            <a href="descripcion.html" class="stretched-link card-link"></a>
                         </div>
                     </div>
                 </div>
@@ -254,6 +268,9 @@
                             <button type="button" class="btn btn-outline-success rounded w-50  agregar-carrito"
                                 data-id="6" onclick="cargarEventsListeners()">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
+
+                            <!-- Etiqueta carta link -->
+                            <a href="descripcion.html" class="stretched-link card-link"></a>
                         </div>
                     </div>
                 </div>
@@ -347,104 +364,6 @@
                     <a class="dropdown-item" href="#">¿Olvido su clave?</a>
                     <button type="submit" class="btn btn-success">Iniciar Sesión</button>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal Registro-->
-    <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="ModalLabelRegistro"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="ModalLabelRegistro">
-                        Registro
-                    </h5>
-                    <!-- Botón de cierre -->
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-
-                <div class="modal-body">
-                    <!-- Modal Content -->
-                    <form class="needs-validation" novalidate>
-                        <div class="form-row">
-                            <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Nombres</label>
-                                <input type="text" class="form-control" id="validationCustom01" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <label for="validationCustom02">Apellidos</label>
-                                <input type="text" class="form-control" id="validationCustom02" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <label for="validationCustomUsername">Nombre de Usuario</label>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" id="validationCustomUsername" required>
-                                    <div class="invalid-feedback">
-                                        Por favor rellene el campo.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-md-6 mb-3">
-                                <label for="validationCustom03">Ciudad</label>
-                                <input type="text" class="form-control" id="validationCustom03" required>
-                                <div class="invalid-feedback">
-                                    Por favor rellene el campo.
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <label for="validationCustom04">Teléfono</label>
-                                <input type="text" class="form-control" id="validationCustom04" required>
-                                <div class="invalid-feedback">
-                                    Por favor rellene el campo.
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="form-group">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                <label class="form-check-label" for="invalidCheck">
-                                    Acepto los terminos y condiciones.
-                                </label>
-                            </div>
-                        </div>
-                        <button class="btn btn-success" type="submit">Guardar</button>
-                    </form>
-
-                    <script>
-                        // Example starter JavaScript for disabling form submissions if there are invalid fields
-                        (function () {
-                            'use strict';
-                            window.addEventListener('load', function () {
-                                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                                var forms = document.getElementsByClassName('needs-validation');
-                                // Loop over them and prevent submission
-                                var validation = Array.prototype.filter.call(forms, function (form) {
-                                    form.addEventListener('submit', function (event) {
-                                        if (form.checkValidity() === false) {
-                                            event.preventDefault();
-                                            event.stopPropagation();
-                                        }
-                                        form.classList.add('was-validated');
-                                    }, false);
-                                });
-                            }, false);
-                        })();
-                    </script>
-
-                </div>
-
             </div>
         </div>
     </div>
