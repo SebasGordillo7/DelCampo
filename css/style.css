@@ -69,9 +69,7 @@
 }
 
 /* Hover de los link en navbar */
-.navbar-s .nav-link:hover {
-    /* color: var(--tercer-color); */
-}
+
 
 /* Hover del menu productos */
 .navbar-s .dropdown-item:hover {
@@ -112,6 +110,8 @@
 .navbar-s .boton-hamburguesa:focus {
     outline: none;
 }
+
+
 
 
 /* Main */
