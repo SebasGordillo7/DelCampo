@@ -124,7 +124,17 @@
 footer {
     margin-top: 20px;
     background-color: var(--tercer-color);
+
 }
+
+
+.footer2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
 
 .submenu {
     position: relative;

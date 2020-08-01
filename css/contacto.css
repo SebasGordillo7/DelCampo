@@ -1,39 +1,8 @@
-/*#nombre {
-    border-radius: 5px;
-    color: #00CB6F;
-    background-color: #b9f7db;
-    background-clip: padding-box;
-    border: 1px solid #076335;
-    border-radius: 30px;
-    padding: 10px 30px;
-    margin-bottom: 15px;
-    font-size: 16px;
-    transition: border-color .15s ease-in-out,
-        box-shadow .15s ease-in-out;
-}
-*/
-
-/*input,
-textarea {
-    border-radius: 5px;
-    color: #00CB6F;
-    background-color: #b9f7db;
-    background-clip: padding-box;
-    border: 1px solid #076335;
-    border-radius: 30px;
-    padding: 10px 30px;
-    margin-bottom: 15px;
-    font-size: 16px;
-    transition: border-color .15s ease-in-out,
-        box-shadow .15s ease-in-out;
-}*/
-
-
 h1 {
     color: #076335;
 }
 
-h4 {
+h5 {
     color: #696969;
 }
 
@@ -52,10 +21,12 @@ h4 {
     background-clip: padding-box;
     border: 1px solid #076335;
     border-radius: 30px;
-    padding: 10px 30px;
-    margin-bottom: 15px;
-    font-size: 20px;
-    /*  transition: border-color .15s ease-in-out,
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    font-size: 12px;
+
+    /*    font-size: 20px;
+    transition: border-color .15s ease-in-out,
         box-shadow .15s ease-in-out;*/
 
     width: 100%;
@@ -84,7 +55,7 @@ h4 {
     background: #fff;
     box-shadow: 0 0 5px #126a77;
     border-color: #17A2B8;
-    font-size: 26px;
+    font-size: 12px;
 }
 
 
@@ -100,7 +71,7 @@ h4 {
     background-color: #00CB6F;
     border-radius: 10px;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px;
     margin: 5px;
     border: 0;
@@ -111,7 +82,7 @@ h4 {
     background-color: #076335;
     border-radius: 10px;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px;
     margin: 5px;
     border: 0;
@@ -134,7 +105,7 @@ form {
 }
 
 .registro {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 /*0ce281*/
@@ -143,13 +114,9 @@ form {
 .general img {
     align-items: center;
     width: 15%;
-
-
 }
 
 .general {
-
-
     background-color: rgb(243, 243, 243);
     border-radius: 10px;
     text-align: center;
@@ -163,63 +130,13 @@ form {
     border-radius: 15px;
 }
 
-/* color de los iconos*/
-.col .fa-facebook-f {
-    color: white;
-}
-
-.col .fa-twitter {
-    color: white;
-}
-
-.col .fa-google-plus-g {
-    color: white;
-}
-
-.col .fa-linkedin-in {
-    color: white;
-}
-
-.col .fa-instagram {
-    color: white;
-}
-
-.col .fa-pinterest {
-    color: white;
-}
-
-/*LA PARTE DEL TEXTO DEL FOOTER*/
-
-.footer-modificado {
-    margin-top: 100px;
-    background-color: #00CB6F;
-}
-
-
-.footer-copyright {
-    color: white;
-    font-size: 26px;
-    padding-top: 0px;
-    padding-bottom: 45px;
-}
-
-.redes-sociales {
-    padding-bottom: 40px;
-}
-
-.iconos-redes {
-    padding-bottom: 0px;
-    padding-top: 50px;
-}
-
-
 .general {
     align-items: center;
     justify-content: center;
 }
 
 .buttom {
-    font-size: 22px;
+    font-size: 20px;
     color: #076335;
     margin: 0 3px 0 0;
 }
