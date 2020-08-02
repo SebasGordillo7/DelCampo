@@ -69,9 +69,7 @@
 }
 
 /* Hover de los link en navbar */
-.navbar-s .nav-link:hover {
-    /* color: var(--tercer-color); */
-}
+
 
 /* Hover del menu productos */
 .navbar-s .dropdown-item:hover {
@@ -114,6 +112,8 @@
 }
 
 
+
+
 /* Main */
 /* Fuente para todo el texto */
 .textos {
@@ -124,7 +124,17 @@
 footer {
     margin-top: 20px;
     background-color: var(--tercer-color);
+
 }
+
+
+.footer2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
 
 .submenu {
     position: relative;
