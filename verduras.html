@@ -57,13 +57,22 @@
                                 </thead>
                                 <tbody></tbody>
                             </table>
-
-                            <button type="button" class="btn btn-danger btn-block">Vaciar Carrito</button>
+                            <div class="row col-md12">
+                                <div class="col-md-6 sm-6">
+                                    <button type="button" class="btn btn-success btn-block " id="comprar">
+                                        Comprar
+                                    </button>
+                                </div>
+                                <div class="col-md-6 sm-6">
+                                    <button type="button" class="btn btn-danger btn-block" id="vaciar-carrito">
+                                        Vaciar Carrito
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
-
             <button class="btn iconos-2 btn-outline-success rounded mx-1" data-toggle="modal"
                 data-target="#inicioSesion"><i class="far fa-user fa-lg"></i>
             </button>
@@ -168,7 +177,7 @@
                             <h6 class="subtitulo-carta">500gr</h6>
                             <h5 class="subtitulo-carta">$1.200</h5>
                             <button type="button" class="btn btn-outline-success rounded w-50 agregar-carrito"
-                                data-id="1" onclick="cargarEventsListeners()">
+                                data-id="1">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
 
                             <!-- Etiqueta carta link -->
@@ -188,7 +197,7 @@
                             <h6 class="subtitulo-carta">500gr</h6>
                             <h5 class="subtitulo-carta">$800</h5>
                             <button type="button" class="btn btn-outline-success rounded w-50 agregar-carrito"
-                                data-id="2" onclick="cargarEventsListeners()">
+                                data-id="2">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
 
                             <!-- Etiqueta carta link -->
@@ -207,7 +216,7 @@
                             <h5 class="subtitulo-carta">$600</h5>
                             <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
                             <button type="button" class="btn btn-outline-success rounded w-50  agregar-carrito"
-                                data-id="3" onclick="cargarEventsListeners()">
+                                data-id="3">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
 
                             <!-- Etiqueta carta link -->
@@ -226,7 +235,7 @@
                             <h5 class="subtitulo-carta">$2.400</h5>
                             <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
                             <button type="button" class="btn btn-outline-success rounded w-50  agregar-carrito"
-                                data-id="4" onclick="cargarEventsListeners()">
+                                data-id="4">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
 
                             <!-- Etiqueta carta link -->
@@ -245,9 +254,10 @@
                             <h6 class="subtitulo-carta">250gr</h6>
                             <h5 class="subtitulo-carta">$600</h5>
                             <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                            <button type="button"
-                                class="btn btn-outline-success rounded w-50 agregar-carrito boton-carrito" data-id="5"
-                                onclick="cargarEventsListeners()">
+
+                            <button type="button" class="btn btn-outline-success rounded w-50  agregar-carrito"
+                                data-id="5">
+
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
 
                             <!-- Etiqueta carta link -->
@@ -266,7 +276,7 @@
                             <h5 class="subtitulo-carta">$600</h5>
                             <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
                             <button type="button" class="btn btn-outline-success rounded w-50  agregar-carrito"
-                                data-id="6" onclick="cargarEventsListeners()">
+                                data-id="6">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
 
                             <!-- Etiqueta carta link -->
@@ -379,7 +389,6 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
     <script src="./js/app.js"></script>
-
 </body>
 
 </html>

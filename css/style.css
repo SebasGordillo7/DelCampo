@@ -124,7 +124,17 @@
 footer {
     margin-top: 20px;
     background-color: var(--tercer-color);
+
 }
+
+
+.footer2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
 
 .submenu {
     position: relative;
@@ -150,4 +160,9 @@ ul {
     padding: 20px;
     min-height: 400px;
     min-width: 300px;
+}
+
+.btn {
+    margin: 0;
+    padding: 0.2em;
 }
