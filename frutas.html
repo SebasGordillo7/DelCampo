@@ -1,4 +1,4 @@
- <!doctype html>
+<!doctype html>
 <html lang="es">
 
 <head>
@@ -8,8 +8,8 @@
     <title>Frutas</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
@@ -41,7 +41,28 @@
             <a class="mx-1" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
                 aria-controls="collapseExample"> <i class="iconos fas fa-search"></i>
             </a>
-            <a class="mx-1" href="#"> <i class="iconos fas fa-cart-arrow-down "></i></a>
+            <div class="align-items-center">
+                <ul>
+                    <li class="submenu">
+                        <a class="mx-1" href="#"> <i class="iconos fas fa-cart-arrow-down "></i></a>
+                        <div id="carrito">
+                            <table id="lista-carrito" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Producto </th>
+                                        <th></th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+
+                            <button type="button" class="btn btn-danger btn-block">Vaciar Carrito</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
             <button class="btn iconos-2 btn-outline-success rounded mx-1" data-toggle="modal"
                 data-target="#inicioSesion"><i class="far fa-user fa-lg"></i>
@@ -120,62 +141,77 @@
 
         </div>
 
-        
+        <!-- Mensaje verduras -->
         <div class="container">
             <div class="d-flex justify-content-between align-items-end mt-4 ">
 
                 <div class="banner-mensaje">
-                    <span>Nuestra cosecha de frutas</span>
+                    <span>Nuestra cosecha de Frutas</span>
                 </div>
 
                 <div class="banner-mensaje ">
-                    <span> </span>
+                    
                 </div>
             </div>
             <hr class="m-0">
 
             <!-- Cartas -->
-            <div class="row ">
+            <div class="d-flex justify-content-center row" id="lista-productos">
                 <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
                     <div class="card scale">
                         <div class="overflow-h">
-                            <img src="./img/feijoa.jpg" class="card-img-top" alt="feijoa">
+                            <img src="./img/fresa.png" class="card-img-top" alt="Fresa">
                         </div>
                         <div class="card-body d-flex flex-column align-items-center p-2">
-                            <h4 class="titulo-carta card-title">Feijoa</h4>
+
+                            <h4 class="titulo-carta card-title">Fresa</h4>
                             <h6 class="subtitulo-carta">500gr</h6>
-                            <h5 class="subtitulo-carta">$1.800</h5>
-                            <button type="button" class="btn btn-outline-success rounded w-50">
+                            <h5 class="subtitulo-carta">$4.500</h5>
+                            <button type="button" class="btn btn-outline-success rounded w-50 agregar-carrito"
+                                data-id="1" onclick="cargarEventsListeners()">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
+
+                            <!-- Etiqueta carta link -->
+                            <a href="descripicion-frutas.html" class="stretched-link card-link"></a>
+
+
                         </div>
                     </div>
                 </div>
                 <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
                     <div class="card scale ">
                         <div class="overflow-h">
-                            <img src="./img/fresa.png" class="card-img-top" alt="Fresa">
+                            <img src="./img/feijoa.jpg" class="card-img-top" alt="feijoa">
                         </div>
                         <div class="card-body d-flex flex-column align-items-center p-2">
-                            <h4 class="titulo-carta card-title">Fresa</h4>
+                            <h4 class="titulo-carta card-title">feijoa</h4>
                             <h6 class="subtitulo-carta">500gr</h6>
-                            <h5 class="subtitulo-carta">$3.500</h5>
-                            <button type="button" class="btn btn-outline-success rounded w-50">
+                            <h5 class="subtitulo-carta">$1.800</h5>
+                            <button type="button" class="btn btn-outline-success rounded w-50 agregar-carrito"
+                                data-id="2" onclick="cargarEventsListeners()">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
+
+                            <!-- Etiqueta carta link -->
+                            <a href="descripicion-frutas.html" class="stretched-link card-link"></a>
                         </div>
                     </div>
                 </div>
                 <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
                     <div class="card scale">
                         <div class="overflow-h">
-                            <img src="./img/granadilla.jpg" class="card-img-top" alt="Granadilla">
+                            <img src="./img/granadilla.jpg" class="card-img-top" alt="granadilla">
                         </div>
                         <div class="card-body d-flex flex-column align-items-center p-2">
-                            <h4 class="titulo-carta card-title">Granadilla</h4>
+                            <h4 class="titulo-carta card-title">Zanahoria</h4>
                             <h6 class="subtitulo-carta">500gr</h6>
-                            <h6 class="subtitulo-carta">$1.300</h6>
+                            <h5 class="subtitulo-carta">$1.300</h5>
                             <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                            <button type="button" class="btn btn-outline-success rounded w-50">
+                            <button type="button" class="btn btn-outline-success rounded w-50  agregar-carrito"
+                                data-id="3" onclick="cargarEventsListeners()">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
+
+                            <!-- Etiqueta carta link -->
+                            <a href="descripicion-frutas.html" class="stretched-link card-link"></a>
                         </div>
                     </div>
                 </div>
@@ -186,41 +222,55 @@
                         </div>
                         <div class=" titulo-cartas card-body d-flex flex-column align-items-center p-2">
                             <h4 class="titulo-carta card-title">Pera</h4>
-                            <h6 class="subtitulo-carta">500gr</h6>
-                            <h6 class="subtitulo-carta">$2.000</h6>
+                            <h6 class="subtitulo-carta">1000gr</h6>
+                            <h5 class="subtitulo-carta">$4000</h5>
                             <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                            <button type="button" class="btn btn-outline-success rounded w-50">
+                            <button type="button" class="btn btn-outline-success rounded w-50  agregar-carrito"
+                                data-id="4" onclick="cargarEventsListeners()">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
+
+                            <!-- Etiqueta carta link -->
+                            <a href="descripicion-frutas.html" class="stretched-link card-link"></a>
+
                         </div>
                     </div>
                 </div>
                 <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
                     <div class="card scale">
                         <div class="overflow-h">
-                            <img src="./img/manzana.jpg" class="card-img-top" alt="Manzana">
-                        </div>
-                        <div class="card-body d-flex flex-column align-items-center p-2">
-                            <h4 class="titulo-carta card-title">Manzana</h4>
-                            <h6 class="subtitulo-carta">250gr</h6>
-                            <h6 class="subtitulo-carta">$1.500</h6>
-                            <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                            <button type="button" class="btn btn-outline-success rounded w-50">
-                                <i class="fas fa-cart-plus fa-lg"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
-                    <div class="card scale">
-                        <div class="overflow-h">
-                            <img src="./img/uvas.png" class="card-img-top" alt="UVas">
+                            <img src="./img/uvas.png" class="card-img-top" alt="Uvas">
                         </div>
                         <div class="card-body d-flex flex-column align-items-center p-2">
                             <h4 class="titulo-carta card-title">Uvas</h4>
                             <h6 class="subtitulo-carta">250gr</h6>
-                            <h6 class="subtitulo-carta">$1.500</h6>
+                            <h5 class="subtitulo-carta">$1.500</h5>
                             <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                            <button type="button" class="btn btn-outline-success rounded w-50">
+                            <button type="button"
+                                class="btn btn-outline-success rounded w-50 agregar-carrito boton-carrito" data-id="5"
+                                onclick="cargarEventsListeners()">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
+
+                            <!-- Etiqueta carta link -->
+                            <a href="descripicion-frutas.html" class="stretched-link card-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
+                    <div class="card scale">
+                        <div class="overflow-h">
+                            <img src="./img/manzana.jpg" class="card-img-top" alt="manzana">
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center p-2">
+                            <h4 class="titulo-carta card-title">Manzana</h4>
+                            <h6 class="subtitulo-carta">250gr</h6>
+                            <h5 class="subtitulo-carta">$1.500</h5>
+                            <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                            <button type="button" class="btn btn-outline-success rounded w-50  agregar-carrito"
+                                data-id="6" onclick="cargarEventsListeners()">
+                                <i class="fas fa-cart-plus fa-lg"></i></button>
+
+                            <!-- Etiqueta carta link -->
+                            <a href="descripicion-frutas.html" class="stretched-link card-link"></a>
                         </div>
                     </div>
                 </div>
@@ -318,115 +368,17 @@
         </div>
     </div>
 
-    <!-- Modal Registro-->
-    <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="ModalLabelRegistro"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="ModalLabelRegistro">
-                        Registro
-                    </h5>
-                    <!-- Botón de cierre -->
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-
-                <div class="modal-body">
-                    <!-- Modal Content -->
-                    <form class="needs-validation" novalidate>
-                        <div class="form-row">
-                            <div class="col-md-4 mb-3">
-                                <label for="validationCustom01">Nombres</label>
-                                <input type="text" class="form-control" id="validationCustom01" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <label for="validationCustom02">Apellidos</label>
-                                <input type="text" class="form-control" id="validationCustom02" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <label for="validationCustomUsername">Nombre de Usuario</label>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" id="validationCustomUsername"
-                                        aria-describedby="inputGroupPrepend" required>
-                                    <div class="invalid-feedback">
-                                        Por favor rellene el campo.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-md-6 mb-3">
-                                <label for="validationCustom03">Ciudad</label>
-                                <input type="text" class="form-control" id="validationCustom03" required>
-                                <div class="invalid-feedback">
-                                    Por favor rellene el campo.
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <label for="validationCustom04">Teléfono</label>
-                                <input type="text" class="form-control" id="validationCustom04" required>
-                                <div class="invalid-feedback">
-                                    Por favor rellene el campo.
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="form-group">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                <label class="form-check-label" for="invalidCheck">
-                                    Acepto los terminos y condiciones.
-                                </label>
-                            </div>
-                        </div>
-                        <button class="btn btn-success" type="submit">Guardar</button>
-                    </form>
-
-                    <script>
-                        // Example starter JavaScript for disabling form submissions if there are invalid fields
-                        (function () {
-                            'use strict';
-                            window.addEventListener('load', function () {
-                                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                                var forms = document.getElementsByClassName('needs-validation');
-                                // Loop over them and prevent submission
-                                var validation = Array.prototype.filter.call(forms, function (form) {
-                                    form.addEventListener('submit', function (event) {
-                                        if (form.checkValidity() === false) {
-                                            event.preventDefault();
-                                            event.stopPropagation();
-                                        }
-                                        form.classList.add('was-validated');
-                                    }, false);
-                                });
-                            }, false);
-                        })();
-                    </script>
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-
     <!-- Script de bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
+    <script src="./js/app.js"></script>
 
 </body>
 
