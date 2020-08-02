@@ -1,10 +1,10 @@
 const carrito = document.getElementById('carrito');
 
-const products = document.getElementById('lista-productos')
+//const products = document.getElementById('lista-productos')
 
 const listaProducts = document.querySelector('#lista-carrito tbody')
 
-const boton = document.querySelector('agregar-carrito')
+//const boton = document.querySelector('agregar-carrito')
 
 const vaciarCarritoBTN = document.getElementById('vaciar-carrito')
 
@@ -13,7 +13,7 @@ const vaciarCarritoBTN = document.getElementById('vaciar-carrito')
 cargarEventsListeners();
 
 function cargarEventsListeners() {
-    products.addEventListener('click', comprarProductos);
+    //products.addEventListener('click', comprarProductos);
 
     carrito.addEventListener('click', eliminarProducto)
     //Vaciar Carrito
@@ -24,46 +24,46 @@ function cargarEventsListeners() {
 
 /// Funciones ///
 //Obtiene los datos del Producto
-function comprarProductos(e) {
-    /* Funcion que añade al carrito*/
-    e.preventDefault();
-    //console.log(e.target.classList)
-    if (e.target.classList.contains('agregar-carrito')) {
-        //Obtiene los datos del Producto
-        const imagen = e.target.parentElement.parentElement;
-        const producto = e.target.parentElement;
-        //Pasa el curso seleccionado
-        leerProduct(imagen, producto)
-    }
+// function comprarProductos(e) {
+//     /* Funcion que añade al carrito*/
+//     e.preventDefault();
+//     //console.log(e.target.classList)
+//     if (e.target.classList.contains('agregar-carrito')) {
+//         //Obtiene los datos del Producto
+//         const imagen = e.target.parentElement.parentElement;
+//         const producto = e.target.parentElement;
+//         //Pasa el curso seleccionado
+//         leerProduct(imagen, producto)
+//     }
 
-}
+// }
 
-function leerProduct(imagen, producto) {
-    const infoProduct = {
-        imagen: imagen.querySelector('img').src,
-        producto: producto.querySelector('h4').textContent,
-        precio: producto.querySelector('h5').textContent,
-        id: producto.querySelector('button').getAttribute('data-id')
-    }
-    insertarCarrito(infoProduct)
-}
+// function leerProduct(imagen, producto) {
+//     const infoProduct = {
+//         imagen: imagen.querySelector('img').src,
+//         producto: producto.querySelector('h4').textContent,
+//         precio: producto.querySelector('h5').textContent,
+//         id: producto.querySelector('button').getAttribute('data-id')
+//     }
+//     insertarCarrito(infoProduct)
+// }
 
-function insertarCarrito(producto) {
-    const row = document.createElement('tr')
-    row.innerHTML = `
-        <td>
-            <img src = "${producto.imagen}"
-            class="card-img-top">
-        </td>
-         <td>${producto.producto}</td>
-         <td>${producto.precio}</td>
-         <td>
-           <button type="button" class="btn btn-danger btn-block borrar-curso" data-id="${producto.id}">x</button>
-         </td>
-    `
-    listaProducts.appendChild(row);
-    gurdarLocalStaorage(producto);
-}
+// function insertarCarrito(producto) {
+//     const row = document.createElement('tr')
+//     row.innerHTML = `
+//         <td>
+//             <img src = "${producto.imagen}"
+//             class="card-img-top">
+//         </td>
+//          <td>${producto.producto}</td>
+//          <td>${producto.precio}</td>
+//          <td>
+//            <button type="button" class="btn btn-danger btn-block borrar-curso" data-id="${producto.id}">x</button>
+//          </td>
+//     `
+//     listaProducts.appendChild(row);
+//     gurdarLocalStaorage(producto);
+// }
 //Elimina producto en el carrito///
 function eliminarProducto(e) {
     e.preventDefault()
@@ -91,16 +91,16 @@ function vaciarCarrito() {
 
 ///Almacena en LocalStorage
 
-function gurdarLocalStaorage(producto) {
-    console.log(producto)
-    let productos;
-    //Obtiene los Productos
-    productos = obtenerProductoLocal();
+// function gurdarLocalStaorage(producto) {
+//     console.log(producto)
+//     let productos;
+//     //Obtiene los Productos
+//     productos = obtenerProductoLocal();
 
-    productos.push(producto);
-    //Inserta los productos en localstorage
-    localStorage.setItem('productos', JSON.stringify(productos));
-}
+//     productos.push(producto);
+//     //Inserta los productos en localstorage
+//     localStorage.setItem('productos', JSON.stringify(productos));
+// }
 
 function obtenerProductoLocal() {
     let productoLS;
