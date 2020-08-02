@@ -1,6 +1,5 @@
 h3 {
     color: #ffffff;
-    text-align: center;
 }
 
 h4 {
@@ -9,19 +8,18 @@ h4 {
 
 
 .campos-texto {
-
+    border-radius: 5px;
     color: #076335;
     background-color: #ebf9f3;
     background-clip: padding-box;
     border: 1px solid #076335;
-    padding: 8px 15px;
-    margin-bottom: 10px;
-    font-size: 14px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin-bottom: 15px;
+    font-size: 20px;
     width: 100%;
     outline: none;
-
 }
-
 
 
 .campos-texto:focus:invalid {
@@ -29,6 +27,7 @@ h4 {
     box-shadow: 0 0 5px #d45252;
     border-color: #b03535
 }
+
 
 
 .campos-texto:hover {
@@ -40,42 +39,34 @@ h4 {
     background: #fff;
     box-shadow: 0 0 5px #126a77;
     border-color: #17A2B8;
-    font-size: 15px;
+    font-size: 26px;
 }
 
 
 
-.buttom {
-
-    font-size: 22px;
-    color: #076335;
-    margin: 0 3px 0 0;
-}
-
-
-.boton2 {
+.boton {
     align-items: center;
-    margin-top: 10px;
+    margin-top: 30px;
 
 }
 
-.bton2 {
+.bton {
     background-color: #076335;
     border-radius: 10px;
     color: white;
     font-size: 20px;
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
     border: 0;
 }
 
 
-.bton2:hover {
-    background-color: #000000;
+.bton:hover {
+    background-color: #00CB6F;
     border-radius: 10px;
     color: white;
     font-size: 20px;
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
     border: 0;
 }
@@ -97,9 +88,8 @@ form {
 }
 
 .registro {
-    margin-bottom: 30px;
-
-
+    margin-bottom: 0px;
+    background-color: #076335;
 }
 
 
@@ -112,28 +102,25 @@ form {
 
 }
 
-.general2 {
+.general {
     background-color: rgb(243, 243, 243);
     border-radius: 10px;
     text-align: center;
-    padding-top: 70px;
-    padding-bottom: 80px;
-    align-items: center;
-    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 
 
 .contenedor {
-    background-color: #00CB6F;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     text-align: center;
-    padding-top: 25px;
-    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 30px;
     align-items: center;
     justify-content: center;
-    width: 100%;
-
+    width: 550px;
 }
 
 .nombre .nombre-color {
@@ -142,10 +129,26 @@ form {
 }
 
 
+.general {
+    justify-content: center;
+    align-items: center;
+}
 
 
 
-.espacio {
-    padding-top: 20px;
-    padding-bottom: 5px;
+
+.buttom {
+
+    font-size: 22px;
+    color: #076335;
+    margin: 0 3px 0 0;
+}
+
+.campos-texto .icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
+    color: #007df1;
 }
