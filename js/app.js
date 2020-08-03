@@ -45,6 +45,7 @@ function leerProduct(imagen, producto) {
         precio: producto.querySelector('h5').textContent,
         id: producto.querySelector('button').getAttribute('data-id')
     }
+    console.log(infoProduct + "leer")
     insertarCarrito(infoProduct)
 }
 
@@ -94,7 +95,7 @@ function vaciarCarrito() {
 ///Almacena en LocalStorage
 
 function gurdarLocalStaorage(producto) {
-    console.log(producto)
+    console.log(producto + "Guardar")
     let productos;
     //Obtiene los Productos
     productos = obtenerProductoLocal();
@@ -128,7 +129,9 @@ function leerLocalStorage() {
          <td>${producto.producto}</td>
          <td>${producto.precio}</td>
          <td>
-           <button type="button" class="btn btn-danger btn-block borrar-producto" data-id="${producto.id}">X</button>
+           <button type="button" class="btn btn-danger btn-block" data-id="${producto.id}">
+            <i class="fas fa-backspace borrar-producto"></i></button>
+           </button>
          </td>
     `
         listaProducts.appendChild(row);
@@ -147,6 +150,7 @@ function eliminarDeLocalStorage(producto) {
             productosLS.splice(index, 1)
     });
     localStorage.setItem('productos', JSON.stringify(productosLS));
+    console.log(productosLS)
 }
 
 //Elimina todos los productos de localStorage

@@ -40,7 +40,6 @@ function eliminarProducto(e) {
     }
 
     eliminarDeLocalStorage(cursoId);
-    window.location.href = "comprar.html"
 }
 
 function eliminarDeLocalStorage(producto) {
@@ -49,9 +48,11 @@ function eliminarDeLocalStorage(producto) {
     productosLS = obtenerProductoLocal();
     productosLS.forEach((productoLS, index) => {
         if (productoLS.id === producto)
-            productosLS.splice(index, 1)
+            console.log(productoLS.id)
+        productosLS.splice(index, 1)
     });
     localStorage.setItem('productos', JSON.stringify(productosLS));
+    window.location.href = "comprar.html"
 }
 //Inserta en localStorage
 function mostrarPorductos() {
@@ -62,7 +63,7 @@ function mostrarPorductos() {
         const row = document.createElement('tr')
         row.innerHTML = `
         <td class="img-table">
-            <img src="${producto.imagen}" width="30%">
+            <img src="${producto.imagen}" width="50%">
         </td>
         <td> ${producto.producto}</td>
         <td> ${producto.precio}</td>
@@ -77,19 +78,14 @@ function mostrarPorductos() {
 }
 
 function mostrarTotal() {
-    var productoLS, suma;
     precios = [];
-    // if (obtenerProductoLocal() === null) {
-    //     window.location.href = "compras.html"
-    // } else {
+    let productoLS;
     productoLS = obtenerProductoLocal();
     productoLS.forEach(function (precio) {
         console.log(precio.precio)
         var total = precio.precio.replace('$', "")
         var totald = total.replace('.', "")
-        console.log(typeof (totald) + " tipo")
         var paseri = parseInt(totald);
-        console.log(typeof (paseri) + " tipo2")
         console.log(paseri)
         precios.push(paseri)
         console.log(precios)
