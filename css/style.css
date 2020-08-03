@@ -166,3 +166,20 @@ ul {
     margin: 0;
     padding: 0.2em;
 }
+
+.img-td {
+
+    padding: 0;
+    margin: 0;
+}
+
+.img-table {
+    width: 20%;
+    padding: 0;
+    margin: 0;
+}
+
+/* .btn-pagar {
+    width: 30%;
+    align-items: flex-end;
+} */

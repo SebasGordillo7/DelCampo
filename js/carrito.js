@@ -26,7 +26,7 @@ function eliminarProducto(e) {
     e.preventDefault()
     console.log('Eliminado')
     let curso, cursoId;
-    if (e.target.classList.contains('borrar-curso')) {
+    if (e.target.classList.contains('borrar-producto')) {
         e.target.parentElement.parentElement.remove();
         curso = e.target.parentElement.parentElement;
         cursoId = curso.querySelector('button').getAttribute('data-id')
@@ -73,7 +73,8 @@ function leerLocalStorage() {
          <td>${producto.producto}</td>
          <td>${producto.precio}</td>
          <td>
-           <button type="button" class="btn btn-danger btn-block borrar-curso" data-id="${producto.id}">x</button>
+           <button type="button" class="btn btn-danger btn-block" data-id="${producto.id}">
+           <i class="fas fa-backspace borrar-producto"></i></button >
          </td>
     `
         listaProducts.appendChild(row);
