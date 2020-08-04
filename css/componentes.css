@@ -68,7 +68,7 @@
 /*  */
 .agregar-carrito {
     position: relative;
-    z-index: 100;
+    z-index: 1;
 }
 
 
@@ -128,8 +128,9 @@
     color: var(--primer-color);
 }
 
-.hola {
+.barra-busqueda {
     position: sticky;
     top: 60px;
     z-index: 100;
 }
+

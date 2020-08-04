@@ -42,8 +42,8 @@
         </div>
 
         <div class="d-flex order-lg-2 align-items-center">
-            <a class="mx-1" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                aria-controls="collapseExample"> <i class="iconos fas fa-search"></i>
+            <a class="mx-1" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"
+                aria-controls="collapseExample2"> <i class="iconos fas fa-search"></i>
             </a>
             <div class="align-items-center">
                 <ul>
@@ -69,7 +69,7 @@
                                 </div>
                                 <div class="col-md-6 sm-6">
                                     <button type="button" class="btn btn-danger btn-block" id="vaciar-carrito">
-                                        Vaciar Carrito
+                                        Vaciar
                                     </button>
                                 </div>
                             </div>
@@ -90,7 +90,9 @@
                 <i class=" iconos fas fa-bars"></i>
             </button>
 
+
         </div>
+
         <div class="collapse navbar-collapse justify-content-between align-items-center" id="barra-navegacion">
             <ul class="navbar-nav">
                 <li class="nav-item active ">
@@ -119,18 +121,17 @@
             </ul>
         </div>
 
-        <div class="collapse mb-2 " id="collapseExample">
-            <div class="card p-0 card-body border-0">
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2 w-75" type="search" placeholder="¿Que buscas?"
-                        aria-label="Search">
-                    <button class="btn btn-outline-success mx-1 rounded btn-sm my-2 my-sm-0"
-                        type="submit">Buscar</button>
-                </form>
-            </div>
-        </div>
-
     </nav>
+
+    <div class="collapse barra-busqueda my-1" id="collapseExample2">
+        <div class="card card-body border-0">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2 w-75" type="search" placeholder="¿Que buscas?" aria-label="Search">
+                <button class="btn btn-outline-success mx-1 rounded btn-sm my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </div>
+
     <!-- Aqui finaliza la parte del menu -->
 
 
@@ -149,7 +150,7 @@
                                 <span class="input-group-text"><i class="fas fa-user-circle"></i></span>
                             </div>
                             <input type="text" class="form-control campos-texto" id="usuario" title="Escriba su usuario"
-                                placeholder="Usuario" minlength="8" maxlength="30" pattern="[A-Za-z]{1,15}" required>
+                                placeholder="Usuario" minlength="8" maxlength="30" pattern="[A-Za-z]{1-15}" required>
                         </div>
 
                         <div class="row col-sm-8 espacio input-group mb-3">
@@ -158,7 +159,7 @@
                             </div>
                             <input type="password" class="form-control campos-texto" id="contraseña"
                                 title="Escriba su contraseña con un minino de 5 y maximo de 10 caracteres"
-                                placeholder="Contraseña" minlength="5" maxlength="10" pattern="[A-Za-z0-9!?-]{5,10}"
+                                placeholder="Contraseña" minlength="5" maxlength="10" pattern="[A-Za-z0-9!?-]{1-15}"
                                 required>
                         </div>
 

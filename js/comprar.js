@@ -30,15 +30,16 @@ function obtenerProductoLocal() {
 function eliminarProducto(e) {
     e.preventDefault()
     console.log('Eliminado')
-    let curso, cursoId;
+    let curso, productoId;
     if (e.target.classList.contains('borrar-producto')) {
-        e.target.parentElement.parentElement.parentElement.remove();
-        console.log(e.target.parentElement.parentElement.parentElement + " Eliminado Carrito")
-        curso = e.target.parentElement.parentElement.parentElement;
-        cursoId = curso.querySelector('button').getAttribute('data-id')
-        console.log(cursoId)
+        e.target.parentElement.parentElement.remove();
+        console.log(e.target.parentElement.parentElement + " Eliminado Carrito")
+        curso = e.target.parentElement.parentElement;
+        productoId = curso.querySelector('button').getAttribute('data-id')
+        console.log(productoId)
     }
-    eliminarDeLocalStorage(cursoId);
+    eliminarDeLocalStorage(productoId);
+
 }
 
 function eliminarDeLocalStorage(producto) {
@@ -52,8 +53,10 @@ function eliminarDeLocalStorage(producto) {
     localStorage.setItem('productos', JSON.stringify(productosLS));
     window.location.href = "comprar.html"
 }
+
 //Inserta en localStorage
 function mostrarPorductos() {
+
     let productoLS;
     productoLS = obtenerProductoLocal();
     console.log(productoLS)
@@ -67,9 +70,7 @@ function mostrarPorductos() {
         <td> ${producto.producto}</td>
         <td> ${producto.precio}</td>
          <td>
-           <button type="button" class="btn btn-danger" data-id="${producto.id}">
-           <i class="fas fa-backspace borrar-producto"></i>
-           </button>
+           <button type="button" class="btn btn-danger borrar-producto" data-id="${producto.id}">X</button>
          </td>
     `
         listaProducts.appendChild(row);
@@ -95,18 +96,21 @@ function mostrarTotal() {
         console.log(precios)
     });
     let total = precios.reduce((a, b) => a + b, 0);
-    if (total === 0) {
+    if (!total == 0) {
+        console.log(total)
+        ///Crea la tabla del carrito desde localStorage
+        const row = document.createElement('div')
+        row.innerHTML = `
+        <h3>${"$" + total}</h3>`
+        console.log(row)
+        precioCompra.appendChild(row);
+        console.log(precioCompra)
+        pago.style.visibility = 'visible';
+        textPago.style.visibility = 'visible'
+    } else {
         pago.style.visibility = 'hidden';
         textPago.style.visibility = 'hidden'
     }
-    console.log(total)
-    ///Crea la tabla del carrito desde localStorage
-    const row = document.createElement('div')
-    row.innerHTML = `
-        <h3>${"$" + total}</h3>`
-    console.log(row)
-    precioCompra.appendChild(row);
-    console.log(precioCompra)
 }
 
 
