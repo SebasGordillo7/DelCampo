@@ -14,8 +14,8 @@
 
 
     <!--CSS y Bootstrap-->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/registro.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/registro.css">
 
     <!--Fontawesome-->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -46,7 +46,7 @@
             <div class="align-items-center">
                 <ul>
                     <li class="submenu">
-                        <a class="mx-1" href="#"> <i class="iconos fas fa-cart-arrow-down "></i></a>
+                        <a class="mx-1" href="#"><i class="iconos fas fa-cart-arrow-down"></i></a>
                         <div id="carrito">
                             <table id="lista-carrito" class="table">
                                 <thead>
@@ -59,20 +59,28 @@
                                 </thead>
                                 <tbody></tbody>
                             </table>
-
-                            <button type="button" class="btn btn-danger btn-block">Vaciar Carrito</button>
+                            <div class="row">
+                                <div class="col-md-6 sm-6">
+                                    <button type="button" class="btn btn-success btn-block " id="comprar"
+                                        onclick="window.location.href='comprar.html'">Comprar
+                                    </button>
+                                </div>
+                                <div class="col-md-6 sm-6">
+                                    <button type="button" class="btn btn-danger btn-block" id="vaciar-carrito">
+                                        Vaciar Carrito
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
 
-            <!--ICONO DE INICIO DE SESION-->
-            <a href="login.html"><button class="btn iconos-2 btn-outline-success rounded mx-1"><i
-                        class="far fa-user fa-lg"></i>
-                </button></a>
-
-            <!--ICONO-->
-
+            <div class="mx-1">
+                <a href="login.html">
+                    <i class="iconos far fa-user"></i>
+                </a>
+            </div>
 
             <button class="boton-hamburguesa navbar-toggler mx-1 px-0" type="button" data-toggle="collapse"
                 data-target="#barra-navegacion" aria-controls="barra-navegacion" aria-expanded="false"
@@ -122,7 +130,7 @@
 
     </nav>
     <!-- Aqui finaliza la parte del menu -->
-    </header>
+
     <!-- Main -->
     <main>
 
@@ -166,7 +174,7 @@
                     <!---AQUI INICIA LA PARTE-->
 
                     <div class="row col-sm-6">
-                        <div class="form-group col-sm-12">
+                        <div class="col-sm-12">
                             <select class="campos-texto" id="tipoDocumento" name="tipoDocumento">
                                 <option selected disabled value="">Seleccione Razón Social</option>
                                 <option value="persona">Persona</option>
@@ -176,20 +184,19 @@
 
                     </div>
                     <div id="passport-info" class="row col-sm-6" hidden>
-                        <div class="form-group col-sm-12">
+                        <div class=" col-sm-12">
 
                             <input class="campos-texto" id="empresa" title="Escriba el nombre de su empresa"
                                 placeholder="Nombre de la Empresa" minlength="4" maxlength="30">
                         </div>
 
-                        <div class="form-group col-sm-12">
+                        <div class=" col-sm-12">
 
 
-                            <select class="campos-texto" id="cargo" name="cargo" title="Seleccione su Cargo" autofocus
-                                required>
-                                -->
+                            <select class="campos-texto" id="cargo" name="cargo" title="Seleccione su Cargo" required>
 
-                                <option hidden selected>Selecciona el Cargo</option>
+
+                                <option hidden selected value="">Selecciona el Cargo</option>
                                 <option value="nit">Gerente Comercial</option>
                                 <option value="cedula">Gerente de Ventas </option>
                                 <option value="extranjeria">Supervisor</option>

@@ -148,3 +148,8 @@ function eliminarDeLocalStorage(producto) {
     });
     localStorage.setItem('productos', JSON.stringify(productosLS));
 }
+
+//Elimina todos los productos de localStorage
+function vaciarCarritoLocalstorage() {
+    localStorage.clear();
+}

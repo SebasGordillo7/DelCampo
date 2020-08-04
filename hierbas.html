@@ -29,12 +29,14 @@
     </header>
     <!-- Aqui inicia la parte del menu -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-s py-0 nav-estilos">
+
         <div class="d-flex align-items-center ">
             <a class="navbar-brand m-o p-0" href="index.html">
                 <img class="img-logo d-inline-block " src="./img/DelcampoS.png" alt="logo">
                 <!--  <h1 class="titulo-brand " >Del Campo</h1> -->
             </a>
         </div>
+
         <div class="d-flex order-lg-2 align-items-center">
             <a class="mx-1" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
                 aria-controls="collapseExample"> <i class="iconos fas fa-search"></i>
@@ -42,7 +44,7 @@
             <div class="align-items-center">
                 <ul>
                     <li class="submenu">
-                        <a class="mx-1" href="#"> <i class="iconos fas fa-cart-arrow-down "></i></a>
+                        <a class="mx-1" href="#"><i class="iconos fas fa-cart-arrow-down"></i></a>
                         <div id="carrito">
                             <table id="lista-carrito" class="table">
                                 <thead>
@@ -71,17 +73,19 @@
                     </li>
                 </ul>
             </div>
-            <!--ICONO DE INICIO DE SESION-->
-            <a href="login.html"><button class="btn iconos-2 btn-outline-success rounded mx-1"><i
-                        class="far fa-user fa-lg"></i>
-                </button></a>
 
-            <!--ICONO-->
+            <div class="mx-1">
+                <a href="login.html">
+                    <i class="iconos far fa-user"></i>
+                </a>
+            </div>
+
             <button class="boton-hamburguesa navbar-toggler mx-1 px-0" type="button" data-toggle="collapse"
                 data-target="#barra-navegacion" aria-controls="barra-navegacion" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <i class=" iconos fas fa-bars"></i>
             </button>
+
         </div>
         <div class="collapse navbar-collapse justify-content-between align-items-center" id="barra-navegacion">
             <ul class="navbar-nav">
@@ -104,11 +108,13 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contacto.html">Contacto</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="registro.html">Registro</a>
                 </li>
             </ul>
         </div>
+
         <div class="collapse mb-2 " id="collapseExample">
             <div class="card p-0 card-body border-0">
                 <form class="form-inline">
@@ -119,6 +125,7 @@
                 </form>
             </div>
         </div>
+
     </nav>
     <!-- Aqui finaliza la parte del menu -->
     <!-- Main -->
@@ -165,7 +172,7 @@
 
                 <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
                     <div class="card scale">
-                        <div class="overflow-h">
+                        <div class="overflow-h cursor" onclick="window.location.href='descripcion-hierbas.html'">
                             <img src="./img/albahaca.jpg" class="card-img-top" alt="albahaca">
                         </div>
                         <div class="card-body d-flex flex-column align-items-center p-2">
@@ -176,13 +183,13 @@
                                 data-id="13">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
                             <!-- Etiqueta carta link -->
-                            <a href="descripcion-hierbas.html" class="stretched-link card-link"></a>
+                            <!-- <a href="descripcion-hierbas.html" class="stretched-link card-link"></a> -->
                         </div>
                     </div>
                 </div>
                 <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
                     <div class="card scale ">
-                        <div class="overflow-h">
+                        <div class="overflow-h cursor" onclick="window.location.href='descripcion-hierbas.html'">
                             <img src="./img/manzanilla.jpg" class="card-img-top" alt="manzanilla">
                         </div>
                         <div class="card-body d-flex flex-column align-items-center p-2">
@@ -197,14 +204,13 @@
                 </div>
                 <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
                     <div class="card scale">
-                        <div class="overflow-h">
+                        <div class="overflow-h cursor" onclick="window.location.href='descripcion-hierbas.html'">
                             <img src="./img/perejil.jpg" class="card-img-top" alt="perejil">
                         </div>
                         <div class="card-body d-flex flex-column align-items-center p-2">
                             <h4 class="titulo-carta card-title">Perejil</h4>
                             <h6 class="subtitulo-carta">100gr</h6>
                             <h5 class="subtitulo-carta">$2.710</h5>
-                            <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
                             <button type="button" class="btn btn-outline-success rounded w-50 agregar-carrito"
                                 data-id="15">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
@@ -213,14 +219,13 @@
                 </div>
                 <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
                     <div class="card scale">
-                        <div class="overflow-h">
+                        <div class="overflow-h cursor" onclick="window.location.href='descripcion-hierbas.html'">
                             <img src="./img/hierbabuena.jpg" class="card-img-top" alt="hierbabuena">
                         </div>
                         <div class=" titulo-cartas card-body d-flex flex-column align-items-center p-2">
                             <h4 class="titulo-carta card-title">Hierbabuena</h4>
                             <h6 class="subtitulo-carta">50gr</h6>
                             <h5 class="subtitulo-carta">$2.790</h5>
-                            <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
                             <button type="button" class="btn btn-outline-success rounded w-50 agregar-carrito"
                                 data-id="16">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
@@ -229,14 +234,13 @@
                 </div>
                 <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
                     <div class="card scale">
-                        <div class="overflow-h">
+                        <div class="overflow-h cursor" onclick="window.location.href='descripcion-hierbas.html'">
                             <img src="./img/eneldo.jpg" class="card-img-top" alt="eneldo">
                         </div>
                         <div class="card-body d-flex flex-column align-items-center p-2">
                             <h4 class="titulo-carta card-title">Eneldo</h4>
                             <h6 class="subtitulo-carta">50gr</h6>
                             <h5 class="subtitulo-carta">$2.370</h5>
-                            <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
                             <button type="button" class="btn btn-outline-success rounded w-50 agregar-carrito"
                                 data-id="17">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
@@ -245,14 +249,13 @@
                 </div>
                 <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
                     <div class="card scale">
-                        <div class="overflow-h">
+                        <div class="overflow-h cursor" onclick="window.location.href='descripcion-hierbas.html'">
                             <img src="./img/tomillo.jpg" class="card-img-top" alt="tomillo">
                         </div>
                         <div class="card-body d-flex flex-column align-items-center p-2">
                             <h4 class="titulo-carta card-title">Tomillo</h4>
                             <h6 class="subtitulo-carta">20gr</h6>
                             <h5 class="subtitulo-carta">$2.990</h5>
-                            <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
                             <button type="button" class="btn btn-outline-success rounded w-50 agregar-carrito"
                                 data-id="18">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>

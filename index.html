@@ -20,12 +20,12 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <!-- Favicon -->
     <link rel="shortcut icon" href="./DelcampoS-favicon.png" type="image/x-icon">
+
 </head>
 
 <body class="textos">
     <header>
     </header>
-
     <nav class="navbar sticky-top navbar-expand-lg navbar-s py-0 nav-estilos">
 
         <div class="d-flex align-items-center ">
@@ -39,11 +39,10 @@
             <a class="mx-1" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
                 aria-controls="collapseExample"> <i class="iconos fas fa-search"></i>
             </a>
-
             <div class="align-items-center">
                 <ul>
                     <li class="submenu">
-                        <a class="mx-1" href="#"> <i class="iconos fas fa-cart-arrow-down "></i></a>
+                        <a class="mx-1" href="#"><i class="iconos fas fa-cart-arrow-down"></i></a>
                         <div id="carrito">
                             <table id="lista-carrito" class="table">
                                 <thead>
@@ -56,16 +55,28 @@
                                 </thead>
                                 <tbody></tbody>
                             </table>
-
-                            <button type="button" class="btn btn-danger btn-block">Vaciar Carrito</button>
+                            <div class="row">
+                                <div class="col-md-6 sm-6">
+                                    <button type="button" class="btn btn-success btn-block " id="comprar"
+                                        onclick="window.location.href='comprar.html'">Comprar
+                                    </button>
+                                </div>
+                                <div class="col-md-6 sm-6">
+                                    <button type="button" class="btn btn-danger btn-block" id="vaciar-carrito">
+                                        Vaciar Carrito
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
 
-            <a href="login.html"><button class="btn iconos-2 btn-outline-success rounded mx-1"><i
-                        class="far fa-user fa-lg"></i>
-                </button></a>
+            <div class="mx-1">
+                <a href="login.html">
+                    <i class="iconos far fa-user"></i>
+                </a>
+            </div>
 
             <button class="boton-hamburguesa navbar-toggler mx-1 px-0" type="button" data-toggle="collapse"
                 data-target="#barra-navegacion" aria-controls="barra-navegacion" aria-expanded="false"
@@ -159,7 +170,7 @@
 
         </section>
         <section>
-            <div class="container-md bg-light p-5">
+            <div class="container-fluid bg-light p-5">
                 <div class="row">
                     <div class="col-md-6 col-lg-3 animate__animated animate__bounceInRight animate__delay-1s">
                         <div>

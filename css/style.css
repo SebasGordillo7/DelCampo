@@ -6,6 +6,7 @@
 @import 'layout.css';
 
 
+
 /* Variables generales */
 :root {
     /* --primer-color: #00CB6F; */
@@ -169,10 +170,11 @@ ul {
     min-width: 300px;
 }
 
-.btn {
+/* Esta clase es de bootstrap, se tira todo cambiarlo por otro nombre */
+/* .btn {
     margin: 0;
     padding: 0.2em;
-}
+} */
 
 .img-td {
 

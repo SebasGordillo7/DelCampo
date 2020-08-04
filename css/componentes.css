@@ -45,6 +45,10 @@
     font-size: 16px;
 }
 
+.cursor{
+    cursor: pointer;
+}
+
 /* Titulo de la descripcion del producto */
 .titulo-descripcion {
     font-size: 32px;
@@ -123,3 +127,4 @@
 .acordeon-titulos:active {
     color: var(--primer-color);
 }
+

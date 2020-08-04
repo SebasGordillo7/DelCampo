@@ -8,8 +8,8 @@
      <title>Frutas</title>
 
      <!-- Bootstrap -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
      <link rel="stylesheet" href="./css/style.css">
      <link rel="stylesheet" href="./css/responsive.css">
@@ -43,7 +43,7 @@
              <div class="align-items-center">
                  <ul>
                      <li class="submenu">
-                         <a class="mx-1" href="#"> <i class="iconos fas fa-cart-arrow-down "></i></a>
+                         <a class="mx-1" href="#"><i class="iconos fas fa-cart-arrow-down"></i></a>
                          <div id="carrito">
                              <table id="lista-carrito" class="table">
                                  <thead>
@@ -72,10 +72,12 @@
                      </li>
                  </ul>
              </div>
-             <button class="btn iconos-2 btn-outline-success rounded mx-1" data-toggle="modal"
-                 data-target="#inicioSesion"><i class="far fa-user fa-lg"></i>
-             </button>
 
+             <div class="mx-1">
+                 <a href="login.html">
+                     <i class="iconos far fa-user"></i>
+                 </a>
+             </div>
 
              <button class="boton-hamburguesa navbar-toggler mx-1 px-0" type="button" data-toggle="collapse"
                  data-target="#barra-navegacion" aria-controls="barra-navegacion" aria-expanded="false"
@@ -98,12 +100,16 @@
                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                          <a class="dropdown-item" href="verduras.html">Verduras</a>
                          <a class="dropdown-item" href="frutas.html">Frutas</a>
-
+                         <div class="dropdown-divider"></div>
                          <a class="dropdown-item" href="hierbas.html">Hierbas Aromáticas</a>
                      </div>
                  </li>
                  <li class="nav-item">
                      <a class="nav-link" href="contacto.html">Contacto</a>
+                 </li>
+
+                 <li class="nav-item">
+                     <a class="nav-link" href="registro.html">Registro</a>
                  </li>
              </ul>
          </div>
@@ -164,10 +170,10 @@
              <hr class="m-0">
 
              <!-- Cartas -->
-             <div class="row" id="lista-productos">
+             <div class="row justify-content-center" id="lista-productos">
                  <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
                      <div class="card scale">
-                         <div class="overflow-h">
+                         <div class="overflow-h cursor" onclick="window.location.href='descripicion-frutas.html'">
                              <img src="./img/feijoa.jpg" class="card-img-top" alt="feijoa">
                          </div>
                          <div class="card-body d-flex flex-column align-items-center p-2">
@@ -182,7 +188,7 @@
                  </div>
                  <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
                      <div class="card scale ">
-                         <div class="overflow-h">
+                         <div class="overflow-h cursor" onclick="window.location.href='descripicion-frutas.html'">
                              <img src="./img/fresa.png" class="card-img-top" alt="Fresa">
                          </div>
                          <div class="card-body d-flex flex-column align-items-center p-2">
@@ -197,7 +203,7 @@
                  </div>
                  <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
                      <div class="card scale">
-                         <div class="overflow-h">
+                         <div class="overflow-h cursor" onclick="window.location.href='descripicion-frutas.html'">
                              <img src="./img/granadilla.jpg" class="card-img-top" alt="Granadilla">
                          </div>
                          <div class="card-body d-flex flex-column align-items-center p-2">
@@ -213,23 +219,26 @@
                  </div>
                  <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
                      <div class="card scale">
-                         <div class="overflow-h">
-                             <img src="./img/pera.jpg" class="card-img-top" alt="Pera">
+                         <div class="overflow-h cursor" onclick="window.location.href='descripicion-frutas.html'">
+                             <img src="./img/pera.jpg" class="card-img-top tamaño-imagen" alt="Pera">
                          </div>
                          <div class=" titulo-cartas card-body d-flex flex-column align-items-center p-2">
                              <h4 class="titulo-carta card-title">Pera</h4>
                              <h6 class="subtitulo-carta">500gr</h6>
                              <h5 class="subtitulo-carta">$2.000</h5>
-                             <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+
                              <button type="button" class="btn btn-outline-success rounded w-50 agregar-carrito"
                                  data-id="10">
                                  <i class="fas fa-cart-plus fa-lg"></i></button>
                          </div>
                      </div>
                  </div>
+
+
+
                  <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
                      <div class="card scale">
-                         <div class="overflow-h">
+                         <div class="overflow-h cursor" onclick="window.location.href='descripicion-frutas.html'">
                              <img src="./img/manzana.jpg" class="card-img-top" alt="Manzana">
                          </div>
                          <div class="card-body d-flex flex-column align-items-center p-2">
@@ -245,7 +254,7 @@
                  </div>
                  <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
                      <div class="card scale">
-                         <div class="overflow-h">
+                         <div class="overflow-h cursor" onclick="window.location.href='descripicion-frutas.html'">
                              <img src="./img/uvas.png" class="card-img-top" alt="UVas">
                          </div>
                          <div class="card-body d-flex flex-column align-items-center p-2">
@@ -350,104 +359,7 @@
          </div>
      </div>
 
-     <!-- Modal Registro-->
-     <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="ModalLabelRegistro"
-         aria-hidden="true">
-         <div class="modal-dialog modal-dialog-centered">
-             <div class="modal-content">
-                 <div class="modal-header">
-                     <h5 class="modal-title" id="ModalLabelRegistro">
-                         Registro
-                     </h5>
-                     <!-- Botón de cierre -->
-                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                         <span aria-hidden="true">&times;</span>
-                     </button>
-                 </div>
 
-                 <div class="modal-body">
-                     <!-- Modal Content -->
-                     <form class="needs-validation" novalidate>
-                         <div class="form-row">
-                             <div class="col-md-4 mb-3">
-                                 <label for="validationCustom01">Nombres</label>
-                                 <input type="text" class="form-control" id="validationCustom01" required>
-                                 <div class="valid-feedback">
-                                     Looks good!
-                                 </div>
-                             </div>
-                             <div class="col-md-4 mb-3">
-                                 <label for="validationCustom02">Apellidos</label>
-                                 <input type="text" class="form-control" id="validationCustom02" required>
-                                 <div class="valid-feedback">
-                                     Looks good!
-                                 </div>
-                             </div>
-                             <div class="col-md-4 mb-3">
-                                 <label for="validationCustomUsername">Nombre de Usuario</label>
-                                 <div class="input-group">
-                                     <input type="text" class="form-control" id="validationCustomUsername"
-                                         aria-describedby="inputGroupPrepend" required>
-                                     <div class="invalid-feedback">
-                                         Por favor rellene el campo.
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                         <div class="form-row">
-                             <div class="col-md-6 mb-3">
-                                 <label for="validationCustom03">Ciudad</label>
-                                 <input type="text" class="form-control" id="validationCustom03" required>
-                                 <div class="invalid-feedback">
-                                     Por favor rellene el campo.
-                                 </div>
-                             </div>
-                             <div class="col-md-3 mb-3">
-                                 <label for="validationCustom04">Teléfono</label>
-                                 <input type="text" class="form-control" id="validationCustom04" required>
-                                 <div class="invalid-feedback">
-                                     Por favor rellene el campo.
-                                 </div>
-                             </div>
-
-                         </div>
-                         <div class="form-group">
-                             <div class="form-check">
-                                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                 <label class="form-check-label" for="invalidCheck">
-                                     Acepto los terminos y condiciones.
-                                 </label>
-                             </div>
-                         </div>
-                         <button class="btn btn-success" type="submit">Guardar</button>
-                     </form>
-
-                     <script>
-                         // Example starter JavaScript for disabling form submissions if there are invalid fields
-                         (function () {
-                             'use strict';
-                             window.addEventListener('load', function () {
-                                 // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                                 var forms = document.getElementsByClassName('needs-validation');
-                                 // Loop over them and prevent submission
-                                 var validation = Array.prototype.filter.call(forms, function (form) {
-                                     form.addEventListener('submit', function (event) {
-                                         if (form.checkValidity() === false) {
-                                             event.preventDefault();
-                                             event.stopPropagation();
-                                         }
-                                         form.classList.add('was-validated');
-                                     }, false);
-                                 });
-                             }, false);
-                         })();
-                     </script>
-
-                 </div>
-
-             </div>
-         </div>
-     </div>
 
      <!-- Script de bootstrap -->
      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
