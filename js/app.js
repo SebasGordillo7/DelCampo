@@ -5,7 +5,7 @@ const products = document.getElementById('lista-productos')
 const listaProducts = document.querySelector('#lista-carrito tbody')
 const vaciarCarritoBTN = document.getElementById('vaciar-carrito')
 
-const boton = document.querySelector('agregar-carrito')
+const boton = document.querySelector('.agregar-carrito')
 
 /// Listeners ///
 
