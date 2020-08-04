@@ -3,15 +3,20 @@ const carrito = document.getElementById('carrito');
 const products = document.getElementById('lista-productos')
 
 const listaProducts = document.querySelector('#lista-carrito tbody')
+const vaciarCarritoBTN = document.getElementById('vaciar-carrito')
 
 const boton = document.querySelector('agregar-carrito')
 
 /// Listeners ///
 
-//cargarEventsListeners();
+cargarEventsListeners();
 
 function cargarEventsListeners() {
     products.addEventListener('click', comprarProductos);
+    carrito.addEventListener('click', eliminarProducto)
+    //Vaciar Carrito
+    vaciarCarritoBTN.addEventListener('click', vaciarCarrito)
+    document.addEventListener('DOMContentLoaded', leerLocalStorage)
 }
 
 /// Funciones ///
@@ -39,7 +44,6 @@ function leerProduct(imagen, product) {
         precio: product.querySelector('h5').textContent,
         id: product.querySelector('button').getAttribute('data-id')
     }
-    console.log(infoProduct + "leer")
     insertarCarrito(infoProduct)
 }
 
@@ -53,12 +57,13 @@ function insertarCarrito(product) {
          <td>${product.producto}</td>
          <td>${product.precio}</td>
          <td>
-           <button type="button" class="btn btn-danger btn-block " data-id="${producto.id}">
+           <button type="button" class="btn btn-danger btn-block " data-id="${product.id}">
            <i class="fas fa-backspace borrar-producto"></i></button>
          </td>
     `
     listaProducts.appendChild(row);
-    gurdarLocalStaorage(producto);
+
+    gurdarLocalStaorage(product);
 }
 //Elimina producto en el carrito///
 function eliminarProducto(e) {
@@ -77,7 +82,6 @@ function eliminarProducto(e) {
 }
 
 function vaciarCarrito() {
-
     while (listaProducts.firstChild) {
         listaProducts.removeChild(listaProducts.firstChild)
     }
@@ -89,7 +93,7 @@ function vaciarCarrito() {
 ///Almacena en LocalStorage
 
 function gurdarLocalStaorage(producto) {
-    console.log(producto + "Guardar")
+    console.log(producto)
     let productos;
     //Obtiene los Productos
     productos = obtenerProductoLocal();
@@ -123,9 +127,8 @@ function leerLocalStorage() {
          <td>${producto.producto}</td>
          <td>${producto.precio}</td>
          <td>
-           <button type="button" class="btn btn-danger btn-block" data-id="${producto.id}">
-            <i class="fas fa-backspace borrar-producto"></i></button>
-           </button>
+           <button type="button" class="btn btn-danger btn-block borrar-producto" data-id="${producto.id}">
+           <i class="fas fa-backspace borrar-producto"></i></button>
          </td>
     `
         listaProducts.appendChild(row);
@@ -144,7 +147,4 @@ function eliminarDeLocalStorage(producto) {
             productosLS.splice(index, 1)
     });
     localStorage.setItem('productos', JSON.stringify(productosLS));
-    console.log(productosLS)
-}
-
 }
