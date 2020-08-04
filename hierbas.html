@@ -29,14 +29,12 @@
     </header>
     <!-- Aqui inicia la parte del menu -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-s py-0 nav-estilos">
-
         <div class="d-flex align-items-center ">
             <a class="navbar-brand m-o p-0" href="index.html">
                 <img class="img-logo d-inline-block " src="./img/DelcampoS.png" alt="logo">
                 <!--  <h1 class="titulo-brand " >Del Campo</h1> -->
             </a>
         </div>
-
         <div class="d-flex order-lg-2 align-items-center">
             <a class="mx-1" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
                 aria-controls="collapseExample"> <i class="iconos fas fa-search"></i>
@@ -57,27 +55,33 @@
                                 </thead>
                                 <tbody></tbody>
                             </table>
-
-                            <button type="button" class="btn btn-danger btn-block">Vaciar Carrito</button>
+                            <div class="row">
+                                <div class="col-md-6 sm-6">
+                                    <button type="button" class="btn btn-success btn-block " id="comprar"
+                                        onclick="window.location.href='comprar.html'">Comprar
+                                    </button>
+                                </div>
+                                <div class="col-md-6 sm-6">
+                                    <button type="button" class="btn btn-danger btn-block" id="vaciar-carrito">
+                                        Vaciar Carrito
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
-
             <!--ICONO DE INICIO DE SESION-->
             <a href="login.html"><button class="btn iconos-2 btn-outline-success rounded mx-1"><i
                         class="far fa-user fa-lg"></i>
                 </button></a>
 
             <!--ICONO-->
-
-
             <button class="boton-hamburguesa navbar-toggler mx-1 px-0" type="button" data-toggle="collapse"
                 data-target="#barra-navegacion" aria-controls="barra-navegacion" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <i class=" iconos fas fa-bars"></i>
             </button>
-
         </div>
         <div class="collapse navbar-collapse justify-content-between align-items-center" id="barra-navegacion">
             <ul class="navbar-nav">
@@ -100,13 +104,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contacto.html">Contacto</a>
                 </li>
-
                 <li class="nav-item">
                     <a class="nav-link" href="registro.html">Registro</a>
                 </li>
             </ul>
         </div>
-
         <div class="collapse mb-2 " id="collapseExample">
             <div class="card p-0 card-body border-0">
                 <form class="form-inline">
@@ -117,7 +119,6 @@
                 </form>
             </div>
         </div>
-
     </nav>
     <!-- Aqui finaliza la parte del menu -->
     <!-- Main -->
@@ -131,7 +132,6 @@
                     <li data-target="#carrusel-fotos-banner" data-slide-to="1"></li>
                     <li data-target="#carrusel-fotos-banner" data-slide-to="2"></li>
                 </ol>
-
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -145,9 +145,7 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
         <!-- Mensaje verduras -->
         <div class="container">
             <div class="d-flex justify-content-between align-items-end mt-4 ">
@@ -171,24 +169,17 @@
                             <img src="./img/albahaca.jpg" class="card-img-top" alt="albahaca">
                         </div>
                         <div class="card-body d-flex flex-column align-items-center p-2">
-
                             <h4 class="titulo-carta card-title">Albahaca</h4>
                             <h6 class="subtitulo-carta">50gr</h6>
                             <h5 class="subtitulo-carta">$2.500</h5>
                             <button type="button" class="btn btn-outline-success rounded w-50 agregar-carrito"
-                                data-id="1" onclick="cargarEventsListeners()">
+                                data-id="13">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
-
                             <!-- Etiqueta carta link -->
                             <a href="descripcion-hierbas.html" class="stretched-link card-link"></a>
-
-
                         </div>
                     </div>
                 </div>
-
-
-
                 <div class=" col-6 col-sm-6 col-md-4 col-xl-3 my-2">
                     <div class="card scale ">
                         <div class="overflow-h">
@@ -198,8 +189,8 @@
                             <h4 class="titulo-carta card-title">Manzanilla</h4>
                             <h6 class="subtitulo-carta">200gr</h6>
                             <h5 class="subtitulo-carta">$1.930</h5>
-                            <button type="button" class="btn btn-outline-success rounded w-50 agregar-carrito"
-                                data-id="2" onclick="cargarEventsListeners()">
+                            <button type="button" class="btn btn-outline-success rounded w-50 
+                                agregar-carrito" data-id="14">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
                         </div>
                     </div>
@@ -214,8 +205,8 @@
                             <h6 class="subtitulo-carta">100gr</h6>
                             <h5 class="subtitulo-carta">$2.710</h5>
                             <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                            <button type="button" class="btn btn-outline-success rounded w-50  agregar-carrito"
-                                data-id="3" onclick="cargarEventsListeners()">
+                            <button type="button" class="btn btn-outline-success rounded w-50 agregar-carrito"
+                                data-id="15">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
                         </div>
                     </div>
@@ -230,8 +221,8 @@
                             <h6 class="subtitulo-carta">50gr</h6>
                             <h5 class="subtitulo-carta">$2.790</h5>
                             <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                            <button type="button" class="btn btn-outline-success rounded w-50  agregar-carrito"
-                                data-id="4" onclick="cargarEventsListeners()">
+                            <button type="button" class="btn btn-outline-success rounded w-50 agregar-carrito"
+                                data-id="16">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
                         </div>
                     </div>
@@ -246,8 +237,8 @@
                             <h6 class="subtitulo-carta">50gr</h6>
                             <h5 class="subtitulo-carta">$2.370</h5>
                             <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                            <button type="button" class="btn btn-outline-success rounded w-50  agregar-carrito"
-                                data-id="5" onclick="cargarEventsListeners()">
+                            <button type="button" class="btn btn-outline-success rounded w-50 agregar-carrito"
+                                data-id="17">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
                         </div>
                     </div>
@@ -262,8 +253,8 @@
                             <h6 class="subtitulo-carta">20gr</h6>
                             <h5 class="subtitulo-carta">$2.990</h5>
                             <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                            <button type="button" class="btn btn-outline-success rounded w-50  agregar-carrito"
-                                data-id="6" onclick="cargarEventsListeners()">
+                            <button type="button" class="btn btn-outline-success rounded w-50 agregar-carrito"
+                                data-id="18">
                                 <i class="fas fa-cart-plus fa-lg"></i></button>
                         </div>
                     </div>
@@ -271,7 +262,6 @@
             </div>
         </div>
     </main>
-
     <!-- Footer -->
     <footer>
         <!-- Footer Elements -->
@@ -299,24 +289,18 @@
                         <i class="fab fa-google-plus-g fa-2x "> </i>
                     </a>
                 </div>
-
             </div>
             <div class="text-center ">
                 <h5 class="mensaje-footer">¡Lo mejor del campo a tu disposición!</h5>
             </div>
-
-
             <!-- Copyright -->
             <hr class="m-0">
             <div class="footer-copyright text-center py-2">©2020 Copyright:
                 <a class="footer-copyright" href="https://bootstrap.com/">Del Campo®</a>
             </div>
-
         </div>
     </footer>
     <!-- Footer -->
-
-
     <!-- Script de bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -328,7 +312,6 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
     <script src="./js/app.js"></script>
-
 </body>
 
 </html>
