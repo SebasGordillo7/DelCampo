@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Login</title>
-
-    <!--CSS y Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    <!--CSS y Bootstrap-->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/login.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-
-
-    <!--Fontawesome-->
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./DelcampoS-favicon.png" type="image/x-icon">
-
-</head>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Verduras</title>
+    
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/responsive.css">
+        <link rel="stylesheet" href="./css/login.css">
+    
+        <!-- Fontawesome -->
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="./DelcampoS-favicon.png" type="image/x-icon">
+    
+    
+    
+    
+    </head>
 
 
 <body class="textos">
     <!-- Header -->
     <header>
     </header>
-    <!-- Aqui inicia la parte del menu -->
-    <!-- Aqui inicia la parte del menu -->
+
     <nav class="navbar sticky-top navbar-expand-lg navbar-s py-0 nav-estilos">
 
         <div class="d-flex align-items-center ">
@@ -41,13 +42,13 @@
         </div>
 
         <div class="d-flex order-lg-2 align-items-center">
-            <a class="mx-1" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                aria-controls="collapseExample"> <i class="iconos fas fa-search"></i>
+            <a class="mx-1" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"
+                aria-controls="collapseExample2"> <i class="iconos fas fa-search"></i>
             </a>
             <div class="align-items-center">
                 <ul>
                     <li class="submenu">
-                        <a class="mx-1" href="#"> <i class="iconos fas fa-cart-arrow-down "></i></a>
+                        <a class="mx-1" href="#"><i class="iconos fas fa-cart-arrow-down"></i></a>
                         <div id="carrito">
                             <table id="lista-carrito" class="table">
                                 <thead>
@@ -60,20 +61,28 @@
                                 </thead>
                                 <tbody></tbody>
                             </table>
-
-                            <button type="button" class="btn btn-danger btn-block">Vaciar Carrito</button>
+                            <div class="row">
+                                <div class="col-md-6 sm-6">
+                                    <button type="button" class="btn btn-success btn-block " id="comprar"
+                                        onclick="window.location.href='comprar.html'">Comprar
+                                    </button>
+                                </div>
+                                <div class="col-md-6 sm-6">
+                                    <button type="button" class="btn btn-danger btn-block" id="vaciar-carrito">
+                                        Vaciar
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
 
-            <!--ICONO DE INICIO DE SESION-->
-            <a href="login.html"><button class="btn iconos-2 btn-outline-success rounded mx-1"><i
-                        class="far fa-user fa-lg"></i>
-                </button></a>
-
-            <!--ICONO-->
-
+            <div class="mx-1">
+                <a href="login.html">
+                    <i class="iconos far fa-user"></i>
+                </a>
+            </div>
 
             <button class="boton-hamburguesa navbar-toggler mx-1 px-0" type="button" data-toggle="collapse"
                 data-target="#barra-navegacion" aria-controls="barra-navegacion" aria-expanded="false"
@@ -81,7 +90,9 @@
                 <i class=" iconos fas fa-bars"></i>
             </button>
 
+
         </div>
+
         <div class="collapse navbar-collapse justify-content-between align-items-center" id="barra-navegacion">
             <ul class="navbar-nav">
                 <li class="nav-item active ">
@@ -110,31 +121,28 @@
             </ul>
         </div>
 
-        <div class="collapse mb-2 " id="collapseExample">
-            <div class="card p-0 card-body border-0">
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2 w-75" type="search" placeholder="¿Que buscas?"
-                        aria-label="Search">
-                    <button class="btn btn-outline-success mx-1 rounded btn-sm my-2 my-sm-0"
-                        type="submit">Buscar</button>
-                </form>
-            </div>
-        </div>
-
     </nav>
+
+    <div class="collapse barra-busqueda my-1" id="collapseExample2">
+        <div class="card card-body border-0">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2 w-75" type="search" placeholder="¿Que buscas?" aria-label="Search">
+                <button class="btn btn-outline-success mx-1 rounded btn-sm my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </div>
+
     <!-- Aqui finaliza la parte del menu -->
-    </header>
 
 
     <!-- Main -->
     <main>
-
         <div class="container">
             <!-- Aqui inicia el formulario -->
             <form>
                 <div class="general2 d-flex flex-column">
 
-                    <div class="contenedor d-flex flex-column row col-sm-6">
+                    <div class="contenedor d-flex flex-column row col-md-8 col-lg-6">
                         <h3>Iniciar sesión</h3>
 
                         <div class="row col-sm-8 espacio input-group mb-3">
@@ -142,7 +150,7 @@
                                 <span class="input-group-text"><i class="fas fa-user-circle"></i></span>
                             </div>
                             <input type="text" class="form-control campos-texto" id="usuario" title="Escriba su usuario"
-                                placeholder="Usuario" minlength="8" maxlength="30" pattern="[A-Za-z]{1,15}" required>
+                                placeholder="Usuario" minlength="8" maxlength="30" pattern="[A-Za-z]{1-15}" required>
                         </div>
 
                         <div class="row col-sm-8 espacio input-group mb-3">
@@ -151,15 +159,16 @@
                             </div>
                             <input type="password" class="form-control campos-texto" id="contraseña"
                                 title="Escriba su contraseña con un minino de 5 y maximo de 10 caracteres"
-                                placeholder="Contraseña" minlength="5" maxlength="10" pattern="[A-Za-z0-9!?-]{5,10}"
+                                placeholder="Contraseña" minlength="5" maxlength="10" pattern="[A-Za-z0-9!?-]{1-15}"
                                 required>
                         </div>
 
                         <div class="boton2 col-sm-8">
 
-                            <a href="index.html"><button class="bton2" type="button">Ingresar</button></a>
+                            <button class="bton2" onclick="window.location.href='index.html'" type="button" >Ingresar</button>
+
                             <!--   <a href="registro.html"><input class="bton" type="submit" value="Ingresar" /></a> -->
-                            <a href="registro.html"><button class="bton2" type="button">Registrarte</button></a>
+                            <button class="bton2" onclick="window.location.href='registro.html'" type="button">Registrarte</button>
                         </div>
                     </div>
                 </div>

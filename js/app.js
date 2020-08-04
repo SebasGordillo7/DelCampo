@@ -5,7 +5,7 @@ const products = document.getElementById('lista-productos')
 const listaProducts = document.querySelector('#lista-carrito tbody')
 const vaciarCarritoBTN = document.getElementById('vaciar-carrito')
 
-const boton = document.querySelector('agregar-carrito')
+const boton = document.querySelector('.agregar-carrito')
 
 /// Listeners ///
 
@@ -57,8 +57,8 @@ function insertarCarrito(product) {
          <td>${product.producto}</td>
          <td>${product.precio}</td>
          <td>
-           <button type="button" class="btn btn-danger btn-block " data-id="${product.id}">
-           <i class="fas fa-backspace borrar-producto"></i></button>
+           <button button type = "button"
+           class = "btn btn-danger btn-block borrar-producto" data-id="${product.id}">X</button>
          </td>
     `
     listaProducts.appendChild(row);
@@ -71,9 +71,9 @@ function eliminarProducto(e) {
     console.log('Eliminado')
     let curso, cursoId;
     if (e.target.classList.contains('borrar-producto')) {
-        e.target.parentElement.parentElement.parentElement.remove();
-        console.log(e.target.parentElement.parentElement.parentElement)
-        curso = e.target.parentElement.parentElement.parentElement;
+        e.target.parentElement.parentElement.remove();
+        console.log(e.target.parentElement.parentElement)
+        curso = e.target.parentElement.parentElement;
         cursoId = curso.querySelector('button').getAttribute('data-id')
         console.log(cursoId)
     }
@@ -127,8 +127,7 @@ function leerLocalStorage() {
          <td>${producto.producto}</td>
          <td>${producto.precio}</td>
          <td>
-           <button type="button" class="btn btn-danger btn-block borrar-producto" data-id="${producto.id}">
-           <i class="fas fa-backspace borrar-producto"></i></button>
+           <button type="button" class="btn btn-danger btn-block borrar-producto" data-id="${producto.id}">X</button>
          </td>
     `
         listaProducts.appendChild(row);
@@ -147,4 +146,9 @@ function eliminarDeLocalStorage(producto) {
             productosLS.splice(index, 1)
     });
     localStorage.setItem('productos', JSON.stringify(productosLS));
+}
+
+//Elimina todos los productos de localStorage
+function vaciarCarritoLocalstorage() {
+    localStorage.clear();
 }

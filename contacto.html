@@ -12,8 +12,8 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contacto.css">
     <link rel="stylesheet" href="./css/responsive.css">
 
 
@@ -40,13 +40,13 @@
         </div>
 
         <div class="d-flex order-lg-2 align-items-center">
-            <a class="mx-1" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                aria-controls="collapseExample"> <i class="iconos fas fa-search"></i>
+            <a class="mx-1" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"
+                aria-controls="collapseExample2"> <i class="iconos fas fa-search"></i>
             </a>
             <div class="align-items-center">
                 <ul>
                     <li class="submenu">
-                        <a class="mx-1" href="#"> <i class="iconos fas fa-cart-arrow-down "></i></a>
+                        <a class="mx-1" href="#"><i class="iconos fas fa-cart-arrow-down"></i></a>
                         <div id="carrito">
                             <table id="lista-carrito" class="table">
                                 <thead>
@@ -59,20 +59,28 @@
                                 </thead>
                                 <tbody></tbody>
                             </table>
-
-                            <button type="button" class="btn btn-danger btn-block">Vaciar Carrito</button>
+                            <div class="row">
+                                <div class="col-md-6 sm-6">
+                                    <button type="button" class="btn btn-success btn-block " id="comprar"
+                                        onclick="window.location.href='comprar.html'">Comprar
+                                    </button>
+                                </div>
+                                <div class="col-md-6 sm-6">
+                                    <button type="button" class="btn btn-danger btn-block" id="vaciar-carrito">
+                                        Vaciar
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
 
-            <!--ICONO DE INICIO DE SESION-->
-            <a href="login.html"><button class="btn iconos-2 btn-outline-success rounded mx-1"><i
-                        class="far fa-user fa-lg"></i>
-                </button></a>
-
-            <!--ICONO-->
-
+            <div class="mx-1">
+                <a href="login.html">
+                    <i class="iconos far fa-user"></i>
+                </a>
+            </div>
 
             <button class="boton-hamburguesa navbar-toggler mx-1 px-0" type="button" data-toggle="collapse"
                 data-target="#barra-navegacion" aria-controls="barra-navegacion" aria-expanded="false"
@@ -80,7 +88,9 @@
                 <i class=" iconos fas fa-bars"></i>
             </button>
 
+
         </div>
+
         <div class="collapse navbar-collapse justify-content-between align-items-center" id="barra-navegacion">
             <ul class="navbar-nav">
                 <li class="nav-item active ">
@@ -109,18 +119,17 @@
             </ul>
         </div>
 
-        <div class="collapse mb-2 " id="collapseExample">
-            <div class="card p-0 card-body border-0">
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2 w-75" type="search" placeholder="¿Que buscas?"
-                        aria-label="Search">
-                    <button class="btn btn-outline-success mx-1 rounded btn-sm my-2 my-sm-0"
-                        type="submit">Buscar</button>
-                </form>
-            </div>
-        </div>
-
     </nav>
+
+    <div class="collapse barra-busqueda my-1" id="collapseExample2">
+        <div class="card card-body border-0">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2 w-75" type="search" placeholder="¿Que buscas?" aria-label="Search">
+                <button class="btn btn-outline-success mx-1 rounded btn-sm my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </div>
+
     <!-- Aqui finaliza la parte del menu -->
     <!-- Main -->
     <main>
@@ -136,28 +145,27 @@
 
                     </div>
 
-                    <div class="form-row col-sm-6">
+                    <div class="form-row col-md-8 ">
                         <div class="campos col-sm-12">
 
                             <input type="text" class="campos-texto" id="nombre" title="Escriba su nombre completo"
-                                placeholder="Nombre Completo" minlength="10" maxlength="30" pattern="[A-Za-z]{1,15}"
-                                required>
+                                placeholder="Nombre Completo" minlength="10" maxlength="50" required>
                         </div>
                     </div>
-                    <div class="form-row col-sm-6">
-                        <div class="form-group col-sm-8">
+                    <div class="form-row col-md-8">
+                        <div class="col-sm-6 col-lg-8">
                             <input type="email" class="campos-texto" title="Escriba su correo electronico" id="email"
                                 placeholder="anaphie@example.com" minlength="10" maxlength="30" required>
 
                         </div>
-                        <div class="form-group col-sm-4">
+                        <div class="col-sm-6 col-lg-4">
                             <input type="tel" class="campos-texto" id="telefono" title="Escriba su numero de telefono"
                                 placeholder="Teléfono" minlength="7" maxlength="10" pattern="[0-9]{7,10}" required>
                         </div>
                     </div>
 
 
-                    <div class="form-row col-sm-6">
+                    <div class="form-row col-md-8">
                         <div class="campos col-sm-12">
                             <select class="campos-texto" id="estado" name="estado" title="Seleccione su Estado"
                                 autofocus required>
@@ -168,7 +176,7 @@
                         </div>
                     </div>
 
-                    <div class="form-row col-sm-6">
+                    <div class="form-row col-md-8">
                         <div class="campos col-sm-12">
                             <select class="campos-texto" id="opinion" name="opinion" title="Tipo de Solicitud" required>
                                 <option hidden selected value="">Tipo de Solicitud</option>
@@ -183,11 +191,10 @@
                     </div>
 
 
-                    <div class="form-row col-sm-6">
+                    <div class="form-row col-md-6">
                         <div class=" form-group col-sm-12">
-                            <textarea class="campos-texto" name="" id="mensaje" rows="6" title="Escriba su Mensaje"
-                                placeholder="Mensaje" minlength="10" maxlength="80" pattern="[A-Za-z]{1,15}"
-                                required></textarea>
+                            <textarea class="campos-texto" id="mensaje" rows="6" title="Escriba su Mensaje"
+                                placeholder="Mensaje" minlength="10" maxlength="80" required></textarea>
                         </div>
                     </div>
 
