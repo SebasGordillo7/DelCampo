@@ -128,14 +128,6 @@ footer {
 }
 
 
-.footer2 {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-
-
 .submenu {
     position: relative;
 }
@@ -167,4 +159,10 @@ ul {
     padding: 20px;
     min-height: 400px;
     min-width: 300px;
+}
+
+.conten {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
