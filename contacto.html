@@ -8,166 +8,259 @@
     <title>Contacto</title>
 
     <!--CSS y Bootstrap-->
-    <link rel="stylesheet" href="/css/style.css">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
 
     <!--Fontawesome-->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
-
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./DelcampoS-favicon.png" type="image/x-icon">
 </head>
 
-<body>
+<body class="textos">
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-s navbar-expand-lg navbar-dark sticky-top">
-            <a class="navbar-brand" href="index.html">
-                <img class="img-logo" src="./img/DelcampoS.png" alt="logo">
+    </header>
+    <!-- Aqui inicia la parte del menu -->
+    <!-- Aqui inicia la parte del menu -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-s py-0 nav-estilos">
+
+        <div class="d-flex align-items-center ">
+            <a class="navbar-brand m-o p-0" href="index.html">
+                <img class="img-logo d-inline-block " src="./img/DelcampoS.png" alt="logo">
+                <!--  <h1 class="titulo-brand " >Del Campo</h1> -->
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Verduras <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="frutas.html">Frutas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="hierbas.html">Hierbas Aromaticas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="d-flex order-lg-2 align-items-center">
+            <a class="mx-1" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                aria-controls="collapseExample"> <i class="iconos fas fa-search"></i>
+            </a>
+            <div class="align-items-center">
+                <ul>
+                    <li class="submenu">
+                        <a class="mx-1" href="#"> <i class="iconos fas fa-cart-arrow-down "></i></a>
+                        <div id="carrito">
+                            <table id="lista-carrito" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Producto </th>
+                                        <th></th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+
+                            <button type="button" class="btn btn-danger btn-block">Vaciar Carrito</button>
+                        </div>
                     </li>
                 </ul>
             </div>
-        </nav>
-    </header>
+
+            <!--ICONO DE INICIO DE SESION-->
+            <a href="login.html"><button class="btn iconos-2 btn-outline-success rounded mx-1"><i
+                        class="far fa-user fa-lg"></i>
+                </button></a>
+
+            <!--ICONO-->
+
+
+            <button class="boton-hamburguesa navbar-toggler mx-1 px-0" type="button" data-toggle="collapse"
+                data-target="#barra-navegacion" aria-controls="barra-navegacion" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class=" iconos fas fa-bars"></i>
+            </button>
+
+        </div>
+        <div class="collapse navbar-collapse justify-content-between align-items-center" id="barra-navegacion">
+            <ul class="navbar-nav">
+                <li class="nav-item active ">
+                    <a class="nav-link titulos-nav" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Productos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="verduras.html">Verduras</a>
+                        <a class="dropdown-item" href="frutas.html">Frutas</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="hierbas.html">Hierbas Aromáticas</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="registro.html">Registro</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="collapse mb-2 " id="collapseExample">
+            <div class="card p-0 card-body border-0">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2 w-75" type="search" placeholder="¿Que buscas?"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success mx-1 rounded btn-sm my-2 my-sm-0"
+                        type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+
+    </nav>
+    <!-- Aqui finaliza la parte del menu -->
     <!-- Main -->
     <main>
         <div class="container">
-            <div class="row">
-                <a class="img-gra" href=""></a>
-            </div>
-        </div>
-        <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item active" aria-current="page"> <a href="index.html">Verduras</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"> <a href="frutas.html">Frutas</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"> <a href="hierbas.html">Hierbas
-                            Aromáticas</a>
-                    </li>
-                    <li class="breadcrumb-item active" aria-current="page"> <a href="contacto.html">Contacto</a></li>
-                </ol>
-            </nav>
 
+            <!-- Aquí inicia el formulario Contacto -->
             <form>
-                <h2>Desea que lo Contactemos</h2>
-                <div class="form-row col-sm-6">
-                    <div class="form-group col-sm-6">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" class="form-control" id="nombre">
+                <div class="general d-flex flex-column"><img class="img-registro" src="./img/DelcampoS.png" alt="logo">
+                    <div class="registro col-sm-12">
+                        <h1>Escríbenos</h1>
+
+                        <h5>Permítanos conocer todas sus opiniónes, sugerencias o reconocimientos.</h5>
+
                     </div>
-                    <div class="form-group col-sm-6">
-                        <label for="apellidos">Apellidos</label>
-                        <input type="text" class="form-control" id="apellidos">
+
+                    <div class="form-row col-sm-6">
+                        <div class="campos col-sm-12">
+
+                            <input type="text" class="campos-texto" id="nombre" title="Escriba su nombre completo"
+                                placeholder="Nombre Completo" minlength="10" maxlength="30" pattern="[A-Za-z]{1,15}"
+                                required>
+                        </div>
                     </div>
+                    <div class="form-row col-sm-6">
+                        <div class="form-group col-sm-8">
+                            <input type="email" class="campos-texto" title="Escriba su correo electronico" id="email"
+                                placeholder="anaphie@example.com" minlength="10" maxlength="30" required>
+
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <input type="tel" class="campos-texto" id="telefono" title="Escriba su numero de telefono"
+                                placeholder="Teléfono" minlength="7" maxlength="10" pattern="[0-9]{7,10}" required>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row col-sm-6">
+                        <div class="campos col-sm-12">
+                            <select class="campos-texto" id="estado" name="estado" title="Seleccione su Estado"
+                                autofocus required>
+                                <option hidden selected value="">Tipo de Cliente</option>
+                                <option value="empresa">Empresa</option>
+                                <option value="persona">Persona Natural </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row col-sm-6">
+                        <div class="campos col-sm-12">
+                            <select class="campos-texto" id="opinion" name="opinion" title="Tipo de Solicitud" required>
+                                <option hidden selected value="">Tipo de Solicitud</option>
+                                <option value="queja">Queja</option>
+                                <option value="reclamo">Reclamo </option>
+                                <option value="reconocimiento">Reconocimiento </option>
+                                <option value="solicitud">Solicitud</option>
+                                <option value="sugerencia">Sugerencia </option>
+
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row col-sm-6">
+                        <div class=" form-group col-sm-12">
+                            <textarea class="campos-texto" name="" id="mensaje" rows="6" title="Escriba su Mensaje"
+                                placeholder="Mensaje" minlength="10" maxlength="80" pattern="[A-Za-z]{1,15}"
+                                required></textarea>
+                        </div>
+                    </div>
+
+
+                    <div class="boton">
+                        <input class="bton" type="submit" value="Enviar" />
+
+
+                    </div>
+
                 </div>
-                <div class="form-row col-sm-6">
-                    <div class="form-group col-sm-6">
-                        <label for="celular">Direccion</label>
-                        <input type="text" class="form-control" id="celular">
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <label for="correo">Ciudad</label>
-                        <input type="email" class="form-control" id="correo">
-                    </div>
-                </div>
-                <div class="form-row col-sm-6">
-                    <div class="form-group col-sm-4">
-                        <label for="celular">Celular</label>
-                        <input type="text" class="form-control" id="celular">
-                    </div>
-                    <div class="form-group col-sm-8">
-                        <label for="correo">Correo</label>
-                        <input type="email" class="form-control" rows="10" id="correo">
-                    </div>
-                </div>
-                <div class="form-row col-sm-6">
-                    <div class="form-group col-sm-12">
-                        <label for="comentarios">Comentarios</label>
-                        <textarea class="form-control" name="" id="comentarios" rows="6"></textarea>
-                    </div>
-                </div>
-                <div class="container"><button class="btn btn-dark">Enviar</button></div>
             </form>
+            <!-- Aqui finaliza el formulario-->
+
         </div>
     </main>
     <!-- Footer -->
     <footer>
         <!-- Footer Elements -->
-        <div class="container">
+        <div class="container ">
 
             <!-- Grid row-->
-            <div class="d-flex flex-column align-items-center">
+            <div class="d-flex justify-content-center align-items-center">
 
                 <!-- Grid column -->
-                <div class="col--12 py-5">
+                <div class="my-4">
                     <!-- Facebook -->
-                    <a class="col" href="#" target="_blank">
+                    <a class="col text-decoration-none iconos-footer" href="#">
                         <i class="fab fa-facebook-f fa-2x"></i>
                     </a>
                     <!-- Twitter -->
-                    <a class="col">
+                    <a class="col text-decoration-none iconos-footer" href="#">
                         <i class="fab fa-twitter fa-2x"> </i>
                     </a>
-                    <!-- Google +-->
-                    <a class="col">
-                        <i class="fab fa-google-plus-g fa-lg white-text mr--6 mr-3 fa-2x"> </i>
-                    </a>
-                    <!--Linkedin -->
-                    <a class="col">
-                        <i class="fab fa-linkedin-in fa-lg white-text mr--6 mr-3 fa-2x"> </i>
-                    </a>
                     <!--Instagram-->
-                    <a class="col">
-                        <i class="fab fa-instagram fa-lg white-text mr--6 mr-3 fa-2x"> </i>
+                    <a class="col text-decoration-none iconos-footer" href="#">
+                        <i class="fab fa-instagram fa-2x"> </i>
                     </a>
-                    <!--Pinterest-->
-                    <a class="col">
-                        <i class="fab fa-pinterest fa-lg white-text mr--6 mr-3 fa-2x"> </i>
+                    <!-- Google +-->
+                    <a class="col text-decoration-none iconos-footer" href="#">
+                        <i class="fab fa-google-plus-g fa-2x "> </i>
                     </a>
                 </div>
-                <!-- Grid column -->
 
             </div>
-            <!-- Grid row-->
+            <div class="text-center ">
+                <h5 class="mensaje-footer">¡Lo mejor del campo a tu disposición!</h5>
+            </div>
+
 
             <!-- Copyright -->
-            <div class="footer-copyright text-center py-3"> © 2020 Copyright:
-                <a href="https://bootstrap.com/" style="color:white">Del Campo®</a>
+            <hr class="m-0">
+            <div class="footer-copyright text-center py-2">©2020 Copyright:
+                <a class="footer-copyright" href="https://bootstrap.com/">Del Campo®</a>
             </div>
-            <!-- Copyright -->
+
         </div>
     </footer>
     <!-- Footer -->
 
-    <!--Script Jquery-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    <!-- Script de bootstrap -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+    <script src="./js/app.js"></script>
+
 </body>
 
 </html>

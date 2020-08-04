@@ -1,0 +1,18 @@
+/* Animación de las cartas con prodcutos */
+.scale {
+    transform: scale(1);
+    transition: transform 500ms;
+}
+
+.scale:hover {
+    transform: scale(1.05);
+}
+
+.overflow-h {
+    overflow: hidden;
+}
+
+.carrito{
+    position: relative;
+    z-index: 10;
+}

@@ -1,0 +1,125 @@
+/* Header y nav */
+/* Iconos del header */
+.iconos {
+    color: var(--primer-color);
+    font-size: 150%;
+}
+
+/* Icono de formulario */
+.iconos-2 {
+    color: var(--primer-color);
+    font-size: 60%;
+}
+
+/* Carrusel de fotos en el banner */
+.banner-carrusel {
+    background-size: cover;
+    padding: 0;
+}
+
+/* Imagen dentro del banner  */
+.imagen-banner {
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Mensaje banner */
+.banner-mensaje:first-child {
+    font-size: 16px;
+}
+
+.banner-mensaje:last-child {
+    font-size: 12px;
+}
+
+/* Main */
+
+/* Titulo de la carta */
+.titulo-carta {
+    font-size: 22px;
+}
+
+
+/* Subtitulo de cada carta */
+.subtitulo-carta {
+    font-size: 16px;
+}
+
+/* Titulo de la descripcion del producto */
+.titulo-descripcion {
+    font-size: 32px;
+}
+
+/* Subtitulo de la descripcion del producto */
+.subtitulo-descripcion {
+    font-size: 20px;
+}
+
+
+/* HTML Descripción */
+.label-cantidadProd {
+    font-size: 23px;
+}
+
+/*  */
+.agregar-carrito {
+    position: relative;
+    z-index: 100;
+}
+
+
+/* Footer */
+
+/* Iconos de redes sociales en el footer*/
+.iconos-footer {
+    color: black;
+}
+
+/* Hover en los iconos del footer */
+.iconos-footer:hover {
+    color: rgb(235, 232, 232);
+    text-decoration: none;
+
+}
+
+.mensaje-footer {
+    color: rgb(235, 232, 232);
+    font-family: Kalam;
+    font-size: 18px;
+}
+
+.footer-copyright {
+    color: rgb(235, 232, 232);
+}
+
+
+.imagen-descripcion {
+    height: 200px;
+    /* Para que no se dañe o espiche la imagen */
+    object-fit: cover;
+
+
+}
+
+.redondeo {
+    border-radius: 15px;
+}
+
+.tamaño-boton {
+    width: 100%;
+
+}
+
+.acordeon-titulos {
+    color: black;
+    font-weight: 600;
+}
+
+.acordeon-titulos:focus {
+    text-decoration: none;
+}
+
+.acordeon-titulos:hover,
+.acordeon-titulos:active {
+    color: var(--primer-color);
+}
